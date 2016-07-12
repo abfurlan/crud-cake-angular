@@ -44,10 +44,11 @@ $cakeDescription = 'Produtos';
                     <h1 class="md-toolbar-tools">Menu</h1>
                 </md-toolbar>
                 <md-content ng-controller="MenuCtrl" layout-padding>
-
-                    <md-button ng-click="close()" class="md-primary">
-                        Close Sidenav Left
-                    </md-button>
+                    <md-menu-content>
+                        <md-menu-item>
+                            <a class="md-button" href="produtos" title="Produtos">Produtos</a>
+                        </md-menu-item>
+                    </md-menu-content>
                 </md-content>
             </md-sidenav>
            
