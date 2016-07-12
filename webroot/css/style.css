@@ -1,0 +1,14 @@
+body{
+    overflow: hidden;
+}
+.height-100{
+    height: 100%;
+}
+.md-primary,
+.md-warn{
+    color:#fff !important;
+}
+input[type="checkbox"]{
+    width: 22px;
+    height: 22px;
+}
