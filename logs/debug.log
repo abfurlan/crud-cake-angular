@@ -1,0 +1,17 @@
+2016-07-12 01:04:55 Notice: Notice (8): Indirect modification of overloaded property App\Controller\PostsController::$HTML has no effect in [C:\wamp\www\crud-cake-angular\src\Controller\PostsController.php, line 7]
+Request URL: /crud-cake-angular/
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 146
+App\Controller\PostsController::__construct() - APP/Controller\PostsController.php, line 7
+ReflectionClass::newInstance() - [internal], line ??
+Cake\Routing\Filter\ControllerFactoryFilter::_getController() - CORE\src\Routing\Filter\ControllerFactoryFilter.php, line 100
+Cake\Routing\Filter\ControllerFactoryFilter::beforeDispatch() - CORE\src\Routing\Filter\ControllerFactoryFilter.php, line 51
+Cake\Routing\DispatcherFilter::handle() - CORE\src\Routing\DispatcherFilter.php, line 145
+Cake\Event\EventManager::_callListener() - CORE\src\Event\EventManager.php, line 411
+Cake\Event\EventManager::dispatch() - CORE\src\Event\EventManager.php, line 373
+Cake\Routing\Dispatcher::dispatchEvent() - CORE\src\Event\EventDispatcherTrait.php, line 78
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 62
+[main] - ROOT\webroot\index.php, line 37
+
+
+

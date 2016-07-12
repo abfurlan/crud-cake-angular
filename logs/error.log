@@ -1,0 +1,862 @@
+2016-07-11 23:49:01 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Src could not be found.
+Exception Attributes: array (
+  'class' => 'Src',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /crud-cake-angular/src/
+Stack Trace:
+#0 C:\wamp\www\crud-cake-angular\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-07-11 23:49:50 Error: [Cake\Controller\Exception\MissingActionException] Action AppController::index() could not be found, or is not accessible.
+Exception Attributes: array (
+  'controller' => 'AppController',
+  'action' => 'index',
+  'prefix' => '',
+  'plugin' => NULL,
+)
+Request URL: /crud-cake-angular/App
+Stack Trace:
+#0 C:\wamp\www\crud-cake-angular\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#1 C:\wamp\www\crud-cake-angular\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\AppController))
+#2 C:\wamp\www\crud-cake-angular\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#3 {main}
+
+
+2016-07-11 23:58:44 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Produtos could not be found.
+Exception Attributes: array (
+  'class' => 'Produtos',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /crud-cake-angular/produtos
+Stack Trace:
+#0 C:\wamp\www\crud-cake-angular\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-07-11 23:59:52 Error: [Cake\Controller\Exception\MissingActionException] Action ProdutosController::index() could not be found, or is not accessible.
+Exception Attributes: array (
+  'controller' => 'ProdutosController',
+  'action' => 'index',
+  'prefix' => '',
+  'plugin' => NULL,
+)
+Request URL: /crud-cake-angular/produtos
+Stack Trace:
+#0 C:\wamp\www\crud-cake-angular\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#1 C:\wamp\www\crud-cake-angular\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\ProdutosController))
+#2 C:\wamp\www\crud-cake-angular\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#3 {main}
+
+
+2016-07-12 00:00:11 Error: [Cake\View\Exception\MissingTemplateException] Template file "Produtos\index.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Produtos\\index.ctp',
+)
+Request URL: /crud-cake-angular/produtos
+Stack Trace:
+#0 C:\wamp\www\crud-cake-angular\vendor\cakephp\cakephp\src\View\View.php(584): Cake\View\View->_getViewFileName(NULL)
+#1 C:\wamp\www\crud-cake-angular\vendor\cakephp\cakephp\src\Controller\Controller.php(611): Cake\View\View->render(NULL, NULL)
+#2 C:\wamp\www\crud-cake-angular\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(120): Cake\Controller\Controller->render()
+#3 C:\wamp\www\crud-cake-angular\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\ProdutosController))
+#4 C:\wamp\www\crud-cake-angular\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#5 {main}
+
+
+2016-07-12 00:01:40 Warning: Warning (2): date() expects at least 1 parameter, 0 given in [C:\wamp\www\crud-cake-angular\src\Template\Produtos\index.ctp, line 2]
+Request URL: /crud-cake-angular/produtos
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 146
+date - [internal], line ??
+include - APP/Template\Produtos\index.ctp, line 2
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 995
+Cake\View\View::_render() - CORE\src\View\View.php, line 955
+Cake\View\View::render() - CORE\src\View\View.php, line 587
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 611
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 120
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2016-07-12 00:05:46 Error: Fatal Error (1): Call to a member function find() on a non-object in [C:\wamp\www\crud-cake-angular\src\Controller\ProdutosController.php, line 9]
+Request URL: /crud-cake-angular/produtos
+Referer URL: http://localhost/crud-cake-angular/produtos
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE\src\Error\BaseErrorHandler.php, line 215
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE\src\Error\BaseErrorHandler.php, line 98
+[main] - [internal], line ??
+
+
+
+2016-07-12 00:05:47 Error: [Cake\Error\FatalErrorException] Call to a member function find() on a non-object
+Request URL: /crud-cake-angular/produtos
+Referer URL: http://localhost/crud-cake-angular/produtos
+Stack Trace:
+#0 C:\wamp\www\crud-cake-angular\vendor\cakephp\cakephp\src\Error\BaseErrorHandler.php(98): Cake\Error\BaseErrorHandler->handleFatalError(1, 'Call to a membe...', 'C:\\wamp\\www\\cru...', 9)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2016-07-12 00:06:09 Error: [Cake\Database\Exception] SQLSTATE[42S02]: Base table or view not found: 1146 Table 'cruddb.produtos' doesn't exist
+Request URL: /crud-cake-angular/produtos
+Referer URL: http://localhost/crud-cake-angular/produtos
+Stack Trace:
+#0 C:\wamp\www\crud-cake-angular\vendor\cakephp\cakephp\src\Database\Schema\Collection.php(96): Cake\Database\Schema\Collection->_reflect('Column', 'produtos', Array, Object(Cake\Database\Schema\Table))
+#1 C:\wamp\www\crud-cake-angular\vendor\cakephp\cakephp\src\Database\Schema\CachedCollection.php(64): Cake\Database\Schema\Collection->describe('produtos', Array)
+#2 C:\wamp\www\crud-cake-angular\vendor\cakephp\cakephp\src\ORM\Table.php(430): Cake\Database\Schema\CachedCollection->describe('produtos')
+#3 C:\wamp\www\crud-cake-angular\vendor\cakephp\cakephp\src\ORM\Query.php(211): Cake\ORM\Table->schema()
+#4 C:\wamp\www\crud-cake-angular\vendor\cakephp\cakephp\src\ORM\Query.php(169): Cake\ORM\Query->addDefaultTypes(Object(Cake\ORM\Table))
+#5 C:\wamp\www\crud-cake-angular\vendor\cakephp\cakephp\src\ORM\Table.php(1295): Cake\ORM\Query->__construct(Object(Cake\Database\Connection), Object(Cake\ORM\Table))
+#6 C:\wamp\www\crud-cake-angular\vendor\cakephp\cakephp\src\ORM\Table.php(946): Cake\ORM\Table->query()
+#7 C:\wamp\www\crud-cake-angular\src\Controller\ProdutosController.php(9): Cake\ORM\Table->find('all')
+#8 [internal function]: App\Controller\ProdutosController->index()
+#9 C:\wamp\www\crud-cake-angular\vendor\cakephp\cakephp\src\Controller\Controller.php(429): call_user_func_array(Array, Array)
+#10 C:\wamp\www\crud-cake-angular\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#11 C:\wamp\www\crud-cake-angular\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\ProdutosController))
+#12 C:\wamp\www\crud-cake-angular\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#13 {main}
+
+
+2016-07-12 00:07:55 Error: [Cake\Database\Exception] SQLSTATE[42S02]: Base table or view not found: 1146 Table 'cruddb.produtos' doesn't exist
+Request URL: /crud-cake-angular/produtos
+Referer URL: http://localhost/crud-cake-angular/produtos
+Stack Trace:
+#0 C:\wamp\www\crud-cake-angular\vendor\cakephp\cakephp\src\Database\Schema\Collection.php(96): Cake\Database\Schema\Collection->_reflect('Column', 'produtos', Array, Object(Cake\Database\Schema\Table))
+#1 C:\wamp\www\crud-cake-angular\vendor\cakephp\cakephp\src\Database\Schema\CachedCollection.php(64): Cake\Database\Schema\Collection->describe('produtos', Array)
+#2 C:\wamp\www\crud-cake-angular\vendor\cakephp\cakephp\src\ORM\Table.php(430): Cake\Database\Schema\CachedCollection->describe('produtos')
+#3 C:\wamp\www\crud-cake-angular\vendor\cakephp\cakephp\src\ORM\Query.php(211): Cake\ORM\Table->schema()
+#4 C:\wamp\www\crud-cake-angular\vendor\cakephp\cakephp\src\ORM\Query.php(169): Cake\ORM\Query->addDefaultTypes(Object(Cake\ORM\Table))
+#5 C:\wamp\www\crud-cake-angular\vendor\cakephp\cakephp\src\ORM\Table.php(1295): Cake\ORM\Query->__construct(Object(Cake\Database\Connection), Object(Cake\ORM\Table))
+#6 C:\wamp\www\crud-cake-angular\vendor\cakephp\cakephp\src\ORM\Table.php(946): Cake\ORM\Table->query()
+#7 C:\wamp\www\crud-cake-angular\src\Controller\ProdutosController.php(9): Cake\ORM\Table->find('all')
+#8 [internal function]: App\Controller\ProdutosController->index()
+#9 C:\wamp\www\crud-cake-angular\vendor\cakephp\cakephp\src\Controller\Controller.php(429): call_user_func_array(Array, Array)
+#10 C:\wamp\www\crud-cake-angular\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#11 C:\wamp\www\crud-cake-angular\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\ProdutosController))
+#12 C:\wamp\www\crud-cake-angular\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#13 {main}
+
+
+2016-07-12 00:13:48 Error: Fatal Error (4): syntax error, unexpected ')' in [C:\wamp\www\crud-cake-angular\src\Controller\ProdutosController.php, line 10]
+Request URL: /crud-cake-angular/produtos
+Referer URL: http://localhost/crud-cake-angular/produtos
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE\src\Error\BaseErrorHandler.php, line 215
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE\src\Error\BaseErrorHandler.php, line 98
+[main] - [internal], line ??
+
+
+
+2016-07-12 00:13:48 Error: [Cake\Error\FatalErrorException] syntax error, unexpected ')'
+Request URL: /crud-cake-angular/produtos
+Referer URL: http://localhost/crud-cake-angular/produtos
+Stack Trace:
+#0 C:\wamp\www\crud-cake-angular\vendor\cakephp\cakephp\src\Error\BaseErrorHandler.php(98): Cake\Error\BaseErrorHandler->handleFatalError(4, 'syntax error, u...', 'C:\\wamp\\www\\cru...', 10)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2016-07-12 00:14:34 Error: [Cake\View\Exception\MissingTemplateException] Template file "Produtos\index.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Produtos\\index.ctp',
+)
+Request URL: /crud-cake-angular/produtos
+Referer URL: http://localhost/crud-cake-angular/produtos
+Stack Trace:
+#0 C:\wamp\www\crud-cake-angular\vendor\cakephp\cakephp\src\View\View.php(584): Cake\View\View->_getViewFileName(NULL)
+#1 C:\wamp\www\crud-cake-angular\vendor\cakephp\cakephp\src\Controller\Controller.php(611): Cake\View\View->render(NULL, NULL)
+#2 C:\wamp\www\crud-cake-angular\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(120): Cake\Controller\Controller->render()
+#3 C:\wamp\www\crud-cake-angular\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\ProdutosController))
+#4 C:\wamp\www\crud-cake-angular\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#5 {main}
+
+
+2016-07-12 00:15:02 Error: [Cake\View\Exception\MissingTemplateException] Template file "Produtos\index.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Produtos\\index.ctp',
+)
+Request URL: /crud-cake-angular/produtos
+Referer URL: http://localhost/crud-cake-angular/produtos
+Stack Trace:
+#0 C:\wamp\www\crud-cake-angular\vendor\cakephp\cakephp\src\View\View.php(584): Cake\View\View->_getViewFileName(NULL)
+#1 C:\wamp\www\crud-cake-angular\vendor\cakephp\cakephp\src\Controller\Controller.php(611): Cake\View\View->render(NULL, NULL)
+#2 C:\wamp\www\crud-cake-angular\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(120): Cake\Controller\Controller->render()
+#3 C:\wamp\www\crud-cake-angular\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\ProdutosController))
+#4 C:\wamp\www\crud-cake-angular\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#5 {main}
+
+
+2016-07-12 00:15:07 Error: [Cake\View\Exception\MissingTemplateException] Template file "Produtos\index.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Produtos\\index.ctp',
+)
+Request URL: /crud-cake-angular/produtos
+Referer URL: http://localhost/crud-cake-angular/produtos
+Stack Trace:
+#0 C:\wamp\www\crud-cake-angular\vendor\cakephp\cakephp\src\View\View.php(584): Cake\View\View->_getViewFileName(NULL)
+#1 C:\wamp\www\crud-cake-angular\vendor\cakephp\cakephp\src\Controller\Controller.php(611): Cake\View\View->render(NULL, NULL)
+#2 C:\wamp\www\crud-cake-angular\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(120): Cake\Controller\Controller->render()
+#3 C:\wamp\www\crud-cake-angular\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\ProdutosController))
+#4 C:\wamp\www\crud-cake-angular\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#5 {main}
+
+
+2016-07-12 00:19:24 Error: [Cake\View\Exception\MissingTemplateException] Template file "Produtos\index.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Produtos\\index.ctp',
+)
+Request URL: /crud-cake-angular/produtos
+Referer URL: http://localhost/crud-cake-angular/produtos
+Stack Trace:
+#0 C:\wamp\www\crud-cake-angular\vendor\cakephp\cakephp\src\View\View.php(584): Cake\View\View->_getViewFileName(NULL)
+#1 C:\wamp\www\crud-cake-angular\vendor\cakephp\cakephp\src\Controller\Controller.php(611): Cake\View\View->render(NULL, NULL)
+#2 C:\wamp\www\crud-cake-angular\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(120): Cake\Controller\Controller->render()
+#3 C:\wamp\www\crud-cake-angular\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\ProdutosController))
+#4 C:\wamp\www\crud-cake-angular\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#5 {main}
+
+
+2016-07-12 00:24:29 Error: Fatal Error (1): Class 'AppController' not found in [C:\wamp\www\crud-cake-angular\src\Controller\PostsController.php, line 2]
+Request URL: /crud-cake-angular/posts
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE\src\Error\BaseErrorHandler.php, line 215
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE\src\Error\BaseErrorHandler.php, line 98
+[main] - [internal], line ??
+
+
+
+2016-07-12 00:24:29 Error: [Cake\Error\FatalErrorException] Class 'AppController' not found
+Request URL: /crud-cake-angular/posts
+Stack Trace:
+#0 C:\wamp\www\crud-cake-angular\vendor\cakephp\cakephp\src\Error\BaseErrorHandler.php(98): Cake\Error\BaseErrorHandler->handleFatalError(1, 'Class 'AppContr...', 'C:\\wamp\\www\\cru...', 2)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2016-07-12 00:24:48 Error: Fatal Error (1): Class 'App\AppController' not found in [C:\wamp\www\crud-cake-angular\src\Controller\PostsController.php, line 3]
+Request URL: /crud-cake-angular/posts
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE\src\Error\BaseErrorHandler.php, line 215
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE\src\Error\BaseErrorHandler.php, line 98
+[main] - [internal], line ??
+
+
+
+2016-07-12 00:24:48 Error: [Cake\Error\FatalErrorException] Class 'App\AppController' not found
+Request URL: /crud-cake-angular/posts
+Stack Trace:
+#0 C:\wamp\www\crud-cake-angular\vendor\cakephp\cakephp\src\Error\BaseErrorHandler.php(98): Cake\Error\BaseErrorHandler->handleFatalError(1, 'Class 'App\\AppC...', 'C:\\wamp\\www\\cru...', 3)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2016-07-12 00:25:15 Error: [Cake\Controller\Exception\MissingActionException] Action PostsController::index() could not be found, or is not accessible.
+Exception Attributes: array (
+  'controller' => 'PostsController',
+  'action' => 'index',
+  'prefix' => '',
+  'plugin' => NULL,
+)
+Request URL: /crud-cake-angular/posts
+Stack Trace:
+#0 C:\wamp\www\crud-cake-angular\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#1 C:\wamp\www\crud-cake-angular\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\PostsController))
+#2 C:\wamp\www\crud-cake-angular\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#3 {main}
+
+
+2016-07-12 00:25:26 Error: [Cake\Controller\Exception\MissingActionException] Action PostsController::index() could not be found, or is not accessible.
+Exception Attributes: array (
+  'controller' => 'PostsController',
+  'action' => 'index',
+  'prefix' => '',
+  'plugin' => NULL,
+)
+Request URL: /crud-cake-angular/posts
+Stack Trace:
+#0 C:\wamp\www\crud-cake-angular\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#1 C:\wamp\www\crud-cake-angular\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\PostsController))
+#2 C:\wamp\www\crud-cake-angular\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#3 {main}
+
+
+2016-07-12 00:25:39 Error: [Cake\View\Exception\MissingTemplateException] Template file "Posts\index.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Posts\\index.ctp',
+)
+Request URL: /crud-cake-angular/posts
+Stack Trace:
+#0 C:\wamp\www\crud-cake-angular\vendor\cakephp\cakephp\src\View\View.php(584): Cake\View\View->_getViewFileName(NULL)
+#1 C:\wamp\www\crud-cake-angular\vendor\cakephp\cakephp\src\Controller\Controller.php(611): Cake\View\View->render(NULL, NULL)
+#2 C:\wamp\www\crud-cake-angular\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(120): Cake\Controller\Controller->render()
+#3 C:\wamp\www\crud-cake-angular\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\PostsController))
+#4 C:\wamp\www\crud-cake-angular\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#5 {main}
+
+
+2016-07-12 00:26:02 Error: Fatal Error (1): Call to a member function find() on a non-object in [C:\wamp\www\crud-cake-angular\src\Controller\PostsController.php, line 9]
+Request URL: /crud-cake-angular/posts
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE\src\Error\BaseErrorHandler.php, line 215
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE\src\Error\BaseErrorHandler.php, line 98
+[main] - [internal], line ??
+
+
+
+2016-07-12 00:26:02 Error: [Cake\Error\FatalErrorException] Call to a member function find() on a non-object
+Request URL: /crud-cake-angular/posts
+Stack Trace:
+#0 C:\wamp\www\crud-cake-angular\vendor\cakephp\cakephp\src\Error\BaseErrorHandler.php(98): Cake\Error\BaseErrorHandler->handleFatalError(1, 'Call to a membe...', 'C:\\wamp\\www\\cru...', 9)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2016-07-12 00:26:35 Error: Fatal Error (1): Call to a member function find() on a non-object in [C:\wamp\www\crud-cake-angular\src\Controller\PostsController.php, line 9]
+Request URL: /crud-cake-angular/posts
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE\src\Error\BaseErrorHandler.php, line 215
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE\src\Error\BaseErrorHandler.php, line 98
+[main] - [internal], line ??
+
+
+
+2016-07-12 00:26:35 Error: [Cake\Error\FatalErrorException] Call to a member function find() on a non-object
+Request URL: /crud-cake-angular/posts
+Stack Trace:
+#0 C:\wamp\www\crud-cake-angular\vendor\cakephp\cakephp\src\Error\BaseErrorHandler.php(98): Cake\Error\BaseErrorHandler->handleFatalError(1, 'Call to a membe...', 'C:\\wamp\\www\\cru...', 9)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2016-07-12 00:27:18 Error: Fatal Error (1): Call to a member function find() on a non-object in [C:\wamp\www\crud-cake-angular\src\Controller\PostsController.php, line 9]
+Request URL: /crud-cake-angular/posts
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE\src\Error\BaseErrorHandler.php, line 215
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE\src\Error\BaseErrorHandler.php, line 98
+[main] - [internal], line ??
+
+
+
+2016-07-12 00:27:18 Error: [Cake\Error\FatalErrorException] Call to a member function find() on a non-object
+Request URL: /crud-cake-angular/posts
+Stack Trace:
+#0 C:\wamp\www\crud-cake-angular\vendor\cakephp\cakephp\src\Error\BaseErrorHandler.php(98): Cake\Error\BaseErrorHandler->handleFatalError(1, 'Call to a membe...', 'C:\\wamp\\www\\cru...', 9)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2016-07-12 00:27:38 Error: Fatal Error (1): Call to a member function find() on a non-object in [C:\wamp\www\crud-cake-angular\src\Controller\PostsController.php, line 9]
+Request URL: /crud-cake-angular/posts
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE\src\Error\BaseErrorHandler.php, line 215
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE\src\Error\BaseErrorHandler.php, line 98
+[main] - [internal], line ??
+
+
+
+2016-07-12 00:27:39 Error: [Cake\Error\FatalErrorException] Call to a member function find() on a non-object
+Request URL: /crud-cake-angular/posts
+Stack Trace:
+#0 C:\wamp\www\crud-cake-angular\vendor\cakephp\cakephp\src\Error\BaseErrorHandler.php(98): Cake\Error\BaseErrorHandler->handleFatalError(1, 'Call to a membe...', 'C:\\wamp\\www\\cru...', 9)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2016-07-12 00:32:46 Error: [Cake\View\Exception\MissingTemplateException] Template file "Posts\index.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Posts\\index.ctp',
+)
+Request URL: /crud-cake-angular/posts
+Stack Trace:
+#0 C:\wamp\www\crud-cake-angular\vendor\cakephp\cakephp\src\View\View.php(584): Cake\View\View->_getViewFileName(NULL)
+#1 C:\wamp\www\crud-cake-angular\vendor\cakephp\cakephp\src\Controller\Controller.php(611): Cake\View\View->render(NULL, NULL)
+#2 C:\wamp\www\crud-cake-angular\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(120): Cake\Controller\Controller->render()
+#3 C:\wamp\www\crud-cake-angular\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\PostsController))
+#4 C:\wamp\www\crud-cake-angular\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#5 {main}
+
+
+2016-07-12 00:42:36 Error: [Cake\Datasource\Exception\RecordNotFoundException] Record not found in table "posts"
+Request URL: /crud-cake-angular/posts/view/10
+Stack Trace:
+#0 C:\wamp\www\crud-cake-angular\vendor\cakephp\cakephp\src\ORM\Table.php(1202): Cake\ORM\Query->firstOrFail()
+#1 C:\wamp\www\crud-cake-angular\src\Controller\PostsController.php(14): Cake\ORM\Table->get('10')
+#2 [internal function]: App\Controller\PostsController->view('10')
+#3 C:\wamp\www\crud-cake-angular\vendor\cakephp\cakephp\src\Controller\Controller.php(429): call_user_func_array(Array, Array)
+#4 C:\wamp\www\crud-cake-angular\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#5 C:\wamp\www\crud-cake-angular\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\PostsController))
+#6 C:\wamp\www\crud-cake-angular\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#7 {main}
+
+
+2016-07-12 00:47:19 Error: [Cake\Controller\Exception\MissingActionException] Action PagesController::index() could not be found, or is not accessible.
+Exception Attributes: array (
+  'controller' => 'PagesController',
+  'action' => 'index',
+  'prefix' => '',
+  'plugin' => NULL,
+)
+Request URL: /crud-cake-angular/Pages
+Stack Trace:
+#0 C:\wamp\www\crud-cake-angular\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#1 C:\wamp\www\crud-cake-angular\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\PagesController))
+#2 C:\wamp\www\crud-cake-angular\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#3 {main}
+
+
+2016-07-12 00:48:32 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Index could not be found.
+Exception Attributes: array (
+  'class' => 'Index',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /crud-cake-angular/index
+Stack Trace:
+#0 C:\wamp\www\crud-cake-angular\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-07-12 00:52:29 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Js could not be found.
+Exception Attributes: array (
+  'class' => 'Js',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /crud-cake-angular/js/jquery.js
+Referer URL: http://localhost/crud-cake-angular/
+Stack Trace:
+#0 C:\wamp\www\crud-cake-angular\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-07-12 00:52:39 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Js could not be found.
+Exception Attributes: array (
+  'class' => 'Js',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /crud-cake-angular/js/jquery.js
+Stack Trace:
+#0 C:\wamp\www\crud-cake-angular\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-07-12 00:55:10 Error: [Cake\View\Exception\MissingHelperException] Helper class JavascriptHelper could not be found.
+Exception Attributes: array (
+  'class' => 'JavascriptHelper',
+  'plugin' => NULL,
+)
+Request URL: /crud-cake-angular/
+Stack Trace:
+#0 C:\wamp\www\crud-cake-angular\vendor\cakephp\cakephp\src\Core\ObjectRegistry.php(91): Cake\View\HelperRegistry->_throwMissingClassError('Javascript', NULL)
+#1 C:\wamp\www\crud-cake-angular\vendor\cakephp\cakephp\src\View\View.php(1026): Cake\Core\ObjectRegistry->load('Javascript', Array)
+#2 C:\wamp\www\crud-cake-angular\vendor\cakephp\cakephp\src\View\View.php(929): Cake\View\View->loadHelper('Javascript', Array)
+#3 C:\wamp\www\crud-cake-angular\vendor\cakephp\cakephp\src\View\View.php(345): Cake\View\View->loadHelpers()
+#4 C:\wamp\www\crud-cake-angular\vendor\cakephp\cakephp\src\View\ViewBuilder.php(351): Cake\View\View->__construct(Object(Cake\Network\Request), Object(Cake\Network\Response), Object(Cake\Event\EventManager), Array)
+#5 C:\wamp\www\crud-cake-angular\vendor\cakephp\cakephp\src\View\ViewVarsTrait.php(118): Cake\View\ViewBuilder->build(Array, Object(Cake\Network\Request), Object(Cake\Network\Response), Object(Cake\Event\EventManager))
+#6 C:\wamp\www\crud-cake-angular\vendor\cakephp\cakephp\src\Controller\Controller.php(610): Cake\Controller\Controller->createView()
+#7 C:\wamp\www\crud-cake-angular\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(120): Cake\Controller\Controller->render()
+#8 C:\wamp\www\crud-cake-angular\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\PostsController))
+#9 C:\wamp\www\crud-cake-angular\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#10 {main}
+
+
+2016-07-12 00:55:22 Error: [Cake\View\Exception\MissingHelperException] Helper class jqueryHelper could not be found.
+Exception Attributes: array (
+  'class' => 'jqueryHelper',
+  'plugin' => NULL,
+)
+Request URL: /crud-cake-angular/
+Stack Trace:
+#0 C:\wamp\www\crud-cake-angular\vendor\cakephp\cakephp\src\Core\ObjectRegistry.php(91): Cake\View\HelperRegistry->_throwMissingClassError('jquery', NULL)
+#1 C:\wamp\www\crud-cake-angular\vendor\cakephp\cakephp\src\View\View.php(1026): Cake\Core\ObjectRegistry->load('jquery', Array)
+#2 C:\wamp\www\crud-cake-angular\vendor\cakephp\cakephp\src\View\View.php(929): Cake\View\View->loadHelper('jquery', Array)
+#3 C:\wamp\www\crud-cake-angular\vendor\cakephp\cakephp\src\View\View.php(345): Cake\View\View->loadHelpers()
+#4 C:\wamp\www\crud-cake-angular\vendor\cakephp\cakephp\src\View\ViewBuilder.php(351): Cake\View\View->__construct(Object(Cake\Network\Request), Object(Cake\Network\Response), Object(Cake\Event\EventManager), Array)
+#5 C:\wamp\www\crud-cake-angular\vendor\cakephp\cakephp\src\View\ViewVarsTrait.php(118): Cake\View\ViewBuilder->build(Array, Object(Cake\Network\Request), Object(Cake\Network\Response), Object(Cake\Event\EventManager))
+#6 C:\wamp\www\crud-cake-angular\vendor\cakephp\cakephp\src\Controller\Controller.php(610): Cake\Controller\Controller->createView()
+#7 C:\wamp\www\crud-cake-angular\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(120): Cake\Controller\Controller->render()
+#8 C:\wamp\www\crud-cake-angular\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\PostsController))
+#9 C:\wamp\www\crud-cake-angular\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#10 {main}
+
+
+2016-07-12 00:55:35 Error: [Cake\View\Exception\MissingHelperException] Helper class jqueryHelper could not be found.
+Exception Attributes: array (
+  'class' => 'jqueryHelper',
+  'plugin' => NULL,
+)
+Request URL: /crud-cake-angular/
+Stack Trace:
+#0 C:\wamp\www\crud-cake-angular\vendor\cakephp\cakephp\src\Core\ObjectRegistry.php(91): Cake\View\HelperRegistry->_throwMissingClassError('jquery', NULL)
+#1 C:\wamp\www\crud-cake-angular\vendor\cakephp\cakephp\src\View\View.php(1026): Cake\Core\ObjectRegistry->load('jquery', Array)
+#2 C:\wamp\www\crud-cake-angular\vendor\cakephp\cakephp\src\View\View.php(929): Cake\View\View->loadHelper('jquery', Array)
+#3 C:\wamp\www\crud-cake-angular\vendor\cakephp\cakephp\src\View\View.php(345): Cake\View\View->loadHelpers()
+#4 C:\wamp\www\crud-cake-angular\vendor\cakephp\cakephp\src\View\ViewBuilder.php(351): Cake\View\View->__construct(Object(Cake\Network\Request), Object(Cake\Network\Response), Object(Cake\Event\EventManager), Array)
+#5 C:\wamp\www\crud-cake-angular\vendor\cakephp\cakephp\src\View\ViewVarsTrait.php(118): Cake\View\ViewBuilder->build(Array, Object(Cake\Network\Request), Object(Cake\Network\Response), Object(Cake\Event\EventManager))
+#6 C:\wamp\www\crud-cake-angular\vendor\cakephp\cakephp\src\Controller\Controller.php(610): Cake\Controller\Controller->createView()
+#7 C:\wamp\www\crud-cake-angular\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(120): Cake\Controller\Controller->render()
+#8 C:\wamp\www\crud-cake-angular\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\PostsController))
+#9 C:\wamp\www\crud-cake-angular\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#10 {main}
+
+
+2016-07-12 00:57:53 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Js could not be found.
+Exception Attributes: array (
+  'class' => 'Js',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /crud-cake-angular/js/jquery.js
+Referer URL: http://localhost/crud-cake-angular/
+Stack Trace:
+#0 C:\wamp\www\crud-cake-angular\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-07-12 00:58:15 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Js could not be found.
+Exception Attributes: array (
+  'class' => 'Js',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /crud-cake-angular/js/jquery.js
+Referer URL: http://localhost/crud-cake-angular/
+Stack Trace:
+#0 C:\wamp\www\crud-cake-angular\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-07-12 00:59:53 Error: [Cake\View\Exception\MissingHelperException] Helper class scriptHelper could not be found.
+Exception Attributes: array (
+  'class' => 'scriptHelper',
+  'plugin' => NULL,
+)
+Request URL: /crud-cake-angular/
+Stack Trace:
+#0 C:\wamp\www\crud-cake-angular\vendor\cakephp\cakephp\src\Core\ObjectRegistry.php(91): Cake\View\HelperRegistry->_throwMissingClassError('script', NULL)
+#1 C:\wamp\www\crud-cake-angular\vendor\cakephp\cakephp\src\View\View.php(1026): Cake\Core\ObjectRegistry->load('script', Array)
+#2 C:\wamp\www\crud-cake-angular\vendor\cakephp\cakephp\src\View\View.php(929): Cake\View\View->loadHelper('script', Array)
+#3 C:\wamp\www\crud-cake-angular\vendor\cakephp\cakephp\src\View\View.php(345): Cake\View\View->loadHelpers()
+#4 C:\wamp\www\crud-cake-angular\vendor\cakephp\cakephp\src\View\ViewBuilder.php(351): Cake\View\View->__construct(Object(Cake\Network\Request), Object(Cake\Network\Response), Object(Cake\Event\EventManager), Array)
+#5 C:\wamp\www\crud-cake-angular\vendor\cakephp\cakephp\src\View\ViewVarsTrait.php(118): Cake\View\ViewBuilder->build(Array, Object(Cake\Network\Request), Object(Cake\Network\Response), Object(Cake\Event\EventManager))
+#6 C:\wamp\www\crud-cake-angular\vendor\cakephp\cakephp\src\Controller\Controller.php(610): Cake\Controller\Controller->createView()
+#7 C:\wamp\www\crud-cake-angular\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(120): Cake\Controller\Controller->render()
+#8 C:\wamp\www\crud-cake-angular\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\PostsController))
+#9 C:\wamp\www\crud-cake-angular\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#10 {main}
+
+
+2016-07-12 01:00:14 Error: [Cake\View\Exception\MissingHelperException] Helper class cssHelper could not be found.
+Exception Attributes: array (
+  'class' => 'cssHelper',
+  'plugin' => NULL,
+)
+Request URL: /crud-cake-angular/
+Stack Trace:
+#0 C:\wamp\www\crud-cake-angular\vendor\cakephp\cakephp\src\Core\ObjectRegistry.php(91): Cake\View\HelperRegistry->_throwMissingClassError('css', NULL)
+#1 C:\wamp\www\crud-cake-angular\vendor\cakephp\cakephp\src\View\View.php(1026): Cake\Core\ObjectRegistry->load('css', Array)
+#2 C:\wamp\www\crud-cake-angular\vendor\cakephp\cakephp\src\View\View.php(929): Cake\View\View->loadHelper('css', Array)
+#3 C:\wamp\www\crud-cake-angular\vendor\cakephp\cakephp\src\View\View.php(345): Cake\View\View->loadHelpers()
+#4 C:\wamp\www\crud-cake-angular\vendor\cakephp\cakephp\src\View\ViewBuilder.php(351): Cake\View\View->__construct(Object(Cake\Network\Request), Object(Cake\Network\Response), Object(Cake\Event\EventManager), Array)
+#5 C:\wamp\www\crud-cake-angular\vendor\cakephp\cakephp\src\View\ViewVarsTrait.php(118): Cake\View\ViewBuilder->build(Array, Object(Cake\Network\Request), Object(Cake\Network\Response), Object(Cake\Event\EventManager))
+#6 C:\wamp\www\crud-cake-angular\vendor\cakephp\cakephp\src\Controller\Controller.php(610): Cake\Controller\Controller->createView()
+#7 C:\wamp\www\crud-cake-angular\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(120): Cake\Controller\Controller->render()
+#8 C:\wamp\www\crud-cake-angular\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\PostsController))
+#9 C:\wamp\www\crud-cake-angular\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#10 {main}
+
+
+2016-07-12 01:01:54 Warning: Warning (4096): Argument 1 passed to Cake\Utility\Hash::normalize() must be of the type array, string given, called in C:\wamp\www\crud-cake-angular\vendor\cakephp\cakephp\src\Utility\MergeVariablesTrait.php on line 79 and defined in [C:\wamp\www\crud-cake-angular\vendor\cakephp\cakephp\src\Utility\Hash.php, line 1091]
+Request URL: /crud-cake-angular/
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 146
+Cake\Utility\Hash::normalize() - CORE\src\Utility\Hash.php, line 1091
+Cake\Controller\Controller::_mergeProperty() - CORE\src\Utility\MergeVariablesTrait.php, line 79
+Cake\Controller\Controller::_mergeVars() - CORE\src\Utility\MergeVariablesTrait.php, line 56
+Cake\Controller\Controller::_mergeControllerVars() - CORE\src\Controller\Controller.php, line 443
+Cake\Controller\Controller::__construct() - CORE\src\Controller\Controller.php, line 264
+ReflectionClass::newInstance() - [internal], line ??
+Cake\Routing\Filter\ControllerFactoryFilter::_getController() - CORE\src\Routing\Filter\ControllerFactoryFilter.php, line 100
+Cake\Routing\Filter\ControllerFactoryFilter::beforeDispatch() - CORE\src\Routing\Filter\ControllerFactoryFilter.php, line 51
+Cake\Routing\DispatcherFilter::handle() - CORE\src\Routing\DispatcherFilter.php, line 145
+Cake\Event\EventManager::_callListener() - CORE\src\Event\EventManager.php, line 411
+Cake\Event\EventManager::dispatch() - CORE\src\Event\EventManager.php, line 373
+Cake\Routing\Dispatcher::dispatchEvent() - CORE\src\Event\EventDispatcherTrait.php, line 78
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 62
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2016-07-12 01:01:54 Warning: Warning (2): array_keys() expects parameter 1 to be array, string given in [C:\wamp\www\crud-cake-angular\vendor\cakephp\cakephp\src\Utility\Hash.php, line 1093]
+Request URL: /crud-cake-angular/
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 146
+array_keys - [internal], line ??
+Cake\Utility\Hash::normalize() - CORE\src\Utility\Hash.php, line 1093
+Cake\Controller\Controller::_mergeProperty() - CORE\src\Utility\MergeVariablesTrait.php, line 79
+Cake\Controller\Controller::_mergeVars() - CORE\src\Utility\MergeVariablesTrait.php, line 56
+Cake\Controller\Controller::_mergeControllerVars() - CORE\src\Controller\Controller.php, line 443
+Cake\Controller\Controller::__construct() - CORE\src\Controller\Controller.php, line 264
+ReflectionClass::newInstance() - [internal], line ??
+Cake\Routing\Filter\ControllerFactoryFilter::_getController() - CORE\src\Routing\Filter\ControllerFactoryFilter.php, line 100
+Cake\Routing\Filter\ControllerFactoryFilter::beforeDispatch() - CORE\src\Routing\Filter\ControllerFactoryFilter.php, line 51
+Cake\Routing\DispatcherFilter::handle() - CORE\src\Routing\DispatcherFilter.php, line 145
+Cake\Event\EventManager::_callListener() - CORE\src\Event\EventManager.php, line 411
+Cake\Event\EventManager::dispatch() - CORE\src\Event\EventManager.php, line 373
+Cake\Routing\Dispatcher::dispatchEvent() - CORE\src\Event\EventDispatcherTrait.php, line 78
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 62
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2016-07-12 01:03:36 Warning: Warning (4096): Argument 1 passed to Cake\Utility\Hash::normalize() must be of the type array, string given, called in C:\wamp\www\crud-cake-angular\vendor\cakephp\cakephp\src\Utility\MergeVariablesTrait.php on line 79 and defined in [C:\wamp\www\crud-cake-angular\vendor\cakephp\cakephp\src\Utility\Hash.php, line 1091]
+Request URL: /crud-cake-angular/
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 146
+Cake\Utility\Hash::normalize() - CORE\src\Utility\Hash.php, line 1091
+Cake\Controller\Controller::_mergeProperty() - CORE\src\Utility\MergeVariablesTrait.php, line 79
+Cake\Controller\Controller::_mergeVars() - CORE\src\Utility\MergeVariablesTrait.php, line 56
+Cake\Controller\Controller::_mergeControllerVars() - CORE\src\Controller\Controller.php, line 443
+Cake\Controller\Controller::__construct() - CORE\src\Controller\Controller.php, line 264
+ReflectionClass::newInstance() - [internal], line ??
+Cake\Routing\Filter\ControllerFactoryFilter::_getController() - CORE\src\Routing\Filter\ControllerFactoryFilter.php, line 100
+Cake\Routing\Filter\ControllerFactoryFilter::beforeDispatch() - CORE\src\Routing\Filter\ControllerFactoryFilter.php, line 51
+Cake\Routing\DispatcherFilter::handle() - CORE\src\Routing\DispatcherFilter.php, line 145
+Cake\Event\EventManager::_callListener() - CORE\src\Event\EventManager.php, line 411
+Cake\Event\EventManager::dispatch() - CORE\src\Event\EventManager.php, line 373
+Cake\Routing\Dispatcher::dispatchEvent() - CORE\src\Event\EventDispatcherTrait.php, line 78
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 62
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2016-07-12 01:03:36 Warning: Warning (2): array_keys() expects parameter 1 to be array, string given in [C:\wamp\www\crud-cake-angular\vendor\cakephp\cakephp\src\Utility\Hash.php, line 1093]
+Request URL: /crud-cake-angular/
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 146
+array_keys - [internal], line ??
+Cake\Utility\Hash::normalize() - CORE\src\Utility\Hash.php, line 1093
+Cake\Controller\Controller::_mergeProperty() - CORE\src\Utility\MergeVariablesTrait.php, line 79
+Cake\Controller\Controller::_mergeVars() - CORE\src\Utility\MergeVariablesTrait.php, line 56
+Cake\Controller\Controller::_mergeControllerVars() - CORE\src\Controller\Controller.php, line 443
+Cake\Controller\Controller::__construct() - CORE\src\Controller\Controller.php, line 264
+ReflectionClass::newInstance() - [internal], line ??
+Cake\Routing\Filter\ControllerFactoryFilter::_getController() - CORE\src\Routing\Filter\ControllerFactoryFilter.php, line 100
+Cake\Routing\Filter\ControllerFactoryFilter::beforeDispatch() - CORE\src\Routing\Filter\ControllerFactoryFilter.php, line 51
+Cake\Routing\DispatcherFilter::handle() - CORE\src\Routing\DispatcherFilter.php, line 145
+Cake\Event\EventManager::_callListener() - CORE\src\Event\EventManager.php, line 411
+Cake\Event\EventManager::dispatch() - CORE\src\Event\EventManager.php, line 373
+Cake\Routing\Dispatcher::dispatchEvent() - CORE\src\Event\EventDispatcherTrait.php, line 78
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 62
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2016-07-12 01:03:38 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Js could not be found.
+Exception Attributes: array (
+  'class' => 'Js',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /crud-cake-angular/js/jquery.js
+Referer URL: http://localhost/crud-cake-angular/
+Stack Trace:
+#0 C:\wamp\www\crud-cake-angular\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-07-12 01:03:46 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Js could not be found.
+Exception Attributes: array (
+  'class' => 'Js',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /crud-cake-angular/js/jquery.js
+Referer URL: http://localhost/crud-cake-angular/
+Stack Trace:
+#0 C:\wamp\www\crud-cake-angular\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-07-12 01:04:55 Warning: Warning (2): Creating default object from empty value in [C:\wamp\www\crud-cake-angular\src\Controller\PostsController.php, line 7]
+Request URL: /crud-cake-angular/
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 146
+App\Controller\PostsController::__construct() - APP/Controller\PostsController.php, line 7
+ReflectionClass::newInstance() - [internal], line ??
+Cake\Routing\Filter\ControllerFactoryFilter::_getController() - CORE\src\Routing\Filter\ControllerFactoryFilter.php, line 100
+Cake\Routing\Filter\ControllerFactoryFilter::beforeDispatch() - CORE\src\Routing\Filter\ControllerFactoryFilter.php, line 51
+Cake\Routing\DispatcherFilter::handle() - CORE\src\Routing\DispatcherFilter.php, line 145
+Cake\Event\EventManager::_callListener() - CORE\src\Event\EventManager.php, line 411
+Cake\Event\EventManager::dispatch() - CORE\src\Event\EventManager.php, line 373
+Cake\Routing\Dispatcher::dispatchEvent() - CORE\src\Event\EventDispatcherTrait.php, line 78
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 62
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2016-07-12 01:04:56 Error: [LogicException] No Request object configured. Cannot invoke action
+Request URL: /crud-cake-angular/
+Stack Trace:
+#0 C:\wamp\www\crud-cake-angular\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#1 C:\wamp\www\crud-cake-angular\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\PostsController))
+#2 C:\wamp\www\crud-cake-angular\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#3 {main}
+
+
+2016-07-12 01:05:40 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Js could not be found.
+Exception Attributes: array (
+  'class' => 'Js',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /crud-cake-angular/js/jquery.js
+Referer URL: http://localhost/crud-cake-angular/
+Stack Trace:
+#0 C:\wamp\www\crud-cake-angular\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-07-12 01:05:56 Warning: Warning (4096): Argument 1 passed to Cake\Utility\Hash::normalize() must be of the type array, string given, called in C:\wamp\www\crud-cake-angular\vendor\cakephp\cakephp\src\Utility\MergeVariablesTrait.php on line 79 and defined in [C:\wamp\www\crud-cake-angular\vendor\cakephp\cakephp\src\Utility\Hash.php, line 1091]
+Request URL: /crud-cake-angular/
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 146
+Cake\Utility\Hash::normalize() - CORE\src\Utility\Hash.php, line 1091
+Cake\Controller\Controller::_mergeProperty() - CORE\src\Utility\MergeVariablesTrait.php, line 79
+Cake\Controller\Controller::_mergeVars() - CORE\src\Utility\MergeVariablesTrait.php, line 56
+Cake\Controller\Controller::_mergeControllerVars() - CORE\src\Controller\Controller.php, line 443
+Cake\Controller\Controller::__construct() - CORE\src\Controller\Controller.php, line 264
+ReflectionClass::newInstance() - [internal], line ??
+Cake\Routing\Filter\ControllerFactoryFilter::_getController() - CORE\src\Routing\Filter\ControllerFactoryFilter.php, line 100
+Cake\Routing\Filter\ControllerFactoryFilter::beforeDispatch() - CORE\src\Routing\Filter\ControllerFactoryFilter.php, line 51
+Cake\Routing\DispatcherFilter::handle() - CORE\src\Routing\DispatcherFilter.php, line 145
+Cake\Event\EventManager::_callListener() - CORE\src\Event\EventManager.php, line 411
+Cake\Event\EventManager::dispatch() - CORE\src\Event\EventManager.php, line 373
+Cake\Routing\Dispatcher::dispatchEvent() - CORE\src\Event\EventDispatcherTrait.php, line 78
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 62
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2016-07-12 01:05:56 Warning: Warning (2): array_keys() expects parameter 1 to be array, string given in [C:\wamp\www\crud-cake-angular\vendor\cakephp\cakephp\src\Utility\Hash.php, line 1093]
+Request URL: /crud-cake-angular/
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 146
+array_keys - [internal], line ??
+Cake\Utility\Hash::normalize() - CORE\src\Utility\Hash.php, line 1093
+Cake\Controller\Controller::_mergeProperty() - CORE\src\Utility\MergeVariablesTrait.php, line 79
+Cake\Controller\Controller::_mergeVars() - CORE\src\Utility\MergeVariablesTrait.php, line 56
+Cake\Controller\Controller::_mergeControllerVars() - CORE\src\Controller\Controller.php, line 443
+Cake\Controller\Controller::__construct() - CORE\src\Controller\Controller.php, line 264
+ReflectionClass::newInstance() - [internal], line ??
+Cake\Routing\Filter\ControllerFactoryFilter::_getController() - CORE\src\Routing\Filter\ControllerFactoryFilter.php, line 100
+Cake\Routing\Filter\ControllerFactoryFilter::beforeDispatch() - CORE\src\Routing\Filter\ControllerFactoryFilter.php, line 51
+Cake\Routing\DispatcherFilter::handle() - CORE\src\Routing\DispatcherFilter.php, line 145
+Cake\Event\EventManager::_callListener() - CORE\src\Event\EventManager.php, line 411
+Cake\Event\EventManager::dispatch() - CORE\src\Event\EventManager.php, line 373
+Cake\Routing\Dispatcher::dispatchEvent() - CORE\src\Event\EventDispatcherTrait.php, line 78
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 62
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2016-07-12 01:05:58 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Js could not be found.
+Exception Attributes: array (
+  'class' => 'Js',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /crud-cake-angular/js/jquery.js
+Referer URL: http://localhost/crud-cake-angular/
+Stack Trace:
+#0 C:\wamp\www\crud-cake-angular\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-07-12 01:06:05 Error: [Cake\View\Exception\MissingHelperException] Helper class jqueryHelper could not be found.
+Exception Attributes: array (
+  'class' => 'jqueryHelper',
+  'plugin' => NULL,
+)
+Request URL: /crud-cake-angular/
+Stack Trace:
+#0 C:\wamp\www\crud-cake-angular\vendor\cakephp\cakephp\src\Core\ObjectRegistry.php(91): Cake\View\HelperRegistry->_throwMissingClassError('jquery', NULL)
+#1 C:\wamp\www\crud-cake-angular\vendor\cakephp\cakephp\src\View\View.php(1026): Cake\Core\ObjectRegistry->load('jquery', Array)
+#2 C:\wamp\www\crud-cake-angular\vendor\cakephp\cakephp\src\View\View.php(929): Cake\View\View->loadHelper('jquery', Array)
+#3 C:\wamp\www\crud-cake-angular\vendor\cakephp\cakephp\src\View\View.php(345): Cake\View\View->loadHelpers()
+#4 C:\wamp\www\crud-cake-angular\vendor\cakephp\cakephp\src\View\ViewBuilder.php(351): Cake\View\View->__construct(Object(Cake\Network\Request), Object(Cake\Network\Response), Object(Cake\Event\EventManager), Array)
+#5 C:\wamp\www\crud-cake-angular\vendor\cakephp\cakephp\src\View\ViewVarsTrait.php(118): Cake\View\ViewBuilder->build(Array, Object(Cake\Network\Request), Object(Cake\Network\Response), Object(Cake\Event\EventManager))
+#6 C:\wamp\www\crud-cake-angular\vendor\cakephp\cakephp\src\Controller\Controller.php(610): Cake\Controller\Controller->createView()
+#7 C:\wamp\www\crud-cake-angular\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(120): Cake\Controller\Controller->render()
+#8 C:\wamp\www\crud-cake-angular\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\PostsController))
+#9 C:\wamp\www\crud-cake-angular\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#10 {main}
+
+
+2016-07-12 01:06:17 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Js could not be found.
+Exception Attributes: array (
+  'class' => 'Js',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /crud-cake-angular/js/jquery.js
+Referer URL: http://localhost/crud-cake-angular/
+Stack Trace:
+#0 C:\wamp\www\crud-cake-angular\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-07-12 01:07:14 Error: Fatal Error (4): syntax error, unexpected '=>' (T_DOUBLE_ARROW), expecting ')' in [C:\wamp\www\crud-cake-angular\src\Controller\PostsController.php, line 7]
+Request URL: /crud-cake-angular/
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE\src\Error\BaseErrorHandler.php, line 215
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE\src\Error\BaseErrorHandler.php, line 98
+[main] - [internal], line ??
+
+
+
+2016-07-12 01:07:15 Error: [Cake\Error\FatalErrorException] syntax error, unexpected '=>' (T_DOUBLE_ARROW), expecting ')'
+Request URL: /crud-cake-angular/
+Stack Trace:
+#0 C:\wamp\www\crud-cake-angular\vendor\cakephp\cakephp\src\Error\BaseErrorHandler.php(98): Cake\Error\BaseErrorHandler->handleFatalError(4, 'syntax error, u...', 'C:\\wamp\\www\\cru...', 7)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2016-07-12 01:08:23 Error: [Cake\View\Exception\MissingHelperException] Helper class jHelper could not be found.
+Exception Attributes: array (
+  'class' => 'jHelper',
+  'plugin' => NULL,
+)
+Request URL: /crud-cake-angular/
+Stack Trace:
+#0 C:\wamp\www\crud-cake-angular\vendor\cakephp\cakephp\src\Core\ObjectRegistry.php(91): Cake\View\HelperRegistry->_throwMissingClassError('j', NULL)
+#1 C:\wamp\www\crud-cake-angular\vendor\cakephp\cakephp\src\View\View.php(1026): Cake\Core\ObjectRegistry->load('j', Array)
+#2 C:\wamp\www\crud-cake-angular\vendor\cakephp\cakephp\src\View\View.php(929): Cake\View\View->loadHelper('j', Array)
+#3 C:\wamp\www\crud-cake-angular\vendor\cakephp\cakephp\src\View\View.php(345): Cake\View\View->loadHelpers()
+#4 C:\wamp\www\crud-cake-angular\vendor\cakephp\cakephp\src\View\ViewBuilder.php(351): Cake\View\View->__construct(Object(Cake\Network\Request), Object(Cake\Network\Response), Object(Cake\Event\EventManager), Array)
+#5 C:\wamp\www\crud-cake-angular\vendor\cakephp\cakephp\src\View\ViewVarsTrait.php(118): Cake\View\ViewBuilder->build(Array, Object(Cake\Network\Request), Object(Cake\Network\Response), Object(Cake\Event\EventManager))
+#6 C:\wamp\www\crud-cake-angular\vendor\cakephp\cakephp\src\Controller\Controller.php(610): Cake\Controller\Controller->createView()
+#7 C:\wamp\www\crud-cake-angular\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(120): Cake\Controller\Controller->render()
+#8 C:\wamp\www\crud-cake-angular\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\PostsController))
+#9 C:\wamp\www\crud-cake-angular\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#10 {main}
+
+
