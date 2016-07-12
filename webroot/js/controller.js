@@ -81,17 +81,12 @@ angular.module('BlankApp', ['ngMaterial','md.data.table'])
     $scope.add = {};
     $scope.showModal = function(){
         $mdDialog.show({
-          /*controller: function($scope, theScope){
-            $scope.theScope = theScope;
-          },*/
           templateUrl: 'produtos/form',
           parent: angular.element(document.body),
           clickOutsideToClose:true,
           fullscreen: true,
           scope: $scope.$new()
-          /*locals: {
-                    theScope: $scope
-                }*/
+          
         })
         .then(function(save) {
             console.log(save);  
@@ -107,6 +102,7 @@ angular.module('BlankApp', ['ngMaterial','md.data.table'])
       alert('salvar');
       console.log($scope.add);
       $mdDialog.hide();
+      all();
     };
     
     
