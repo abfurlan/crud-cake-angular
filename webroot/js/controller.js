@@ -78,21 +78,37 @@ angular.module('BlankApp', ['ngMaterial','md.data.table'])
           }
       }
     };
-    
+    $scope.add = {};
     $scope.showModal = function(){
         $mdDialog.show({
+          /*controller: function($scope, theScope){
+            $scope.theScope = theScope;
+          },*/
           templateUrl: 'produtos/form',
           parent: angular.element(document.body),
           clickOutsideToClose:true,
-          fullscreen: true
+          fullscreen: true,
+          scope: $scope.$new()
+          /*locals: {
+                    theScope: $scope
+                }*/
         })
-        .then(function(answer) {
-          $scope.status = 'You said the information was "' + answer + '".';
+        .then(function(save) {
+            console.log(save);  
+            $scope.status = 'You said the information was "' + save + '".';
+          
         }, function() {
-          $scope.status = 'You cancelled the dialog.';
+            $scope.status = 'You cancelled the dialog.';
         });
         
     };
+    
+    $scope.save = function(){
+      alert('salvar');
+      console.log($scope.add);
+      $mdDialog.hide();
+    };
+    
     
   })
   .controller('MenuCtrl', function ($scope, $timeout, $mdSidenav, $log) {

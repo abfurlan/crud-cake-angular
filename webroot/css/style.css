@@ -65,12 +65,15 @@ fieldset[disabled] .form-input {
 textarea.form-input {
   height: auto;
 }
-.inline-group span,
-.inline-group .form-input{
+.inline-group{
     margin-top: 5px;
+}
+.inline-group > * {
     display: inline;
 }
-
+.f-right{
+    float: right;
+}
 .form-input.w-10{
     width: 10%;
 }
