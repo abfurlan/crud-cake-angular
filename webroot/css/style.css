@@ -1,11 +1,8 @@
-body{
-    overflow: hidden;
-}
 .height-100{
     height: 100%;
 }
-.md-primary,
-.md-warn{
+.actions .md-primary,
+.actions .md-warn{
     color:#fff !important;
 }
 input[type="checkbox"]{

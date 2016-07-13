@@ -44,6 +44,7 @@ angular.module('BlankApp', ['ngMaterial','md.data.table'])
       }
     };
     var all = function(){
+        $scope.selected = {};
         var deferred = $q.defer();
         $scope.promise = deferred.promise;
         $http({
@@ -78,8 +79,19 @@ angular.module('BlankApp', ['ngMaterial','md.data.table'])
           }
       }
     };
-    $scope.add = {};
+    
     $scope.showModal = function(){
+        console.log($scope.selected);
+        if($scope.selected.length == 1){
+           $http({
+              method: 'GET',
+              url: 'produtos/view/'+$scope.selected[0]
+            }).then(function(response) {
+                $scope.add = response.data.produto;  
+            });
+            
+        }
+        $scope.add = {'id_status':true};
         $mdDialog.show({
           templateUrl: 'produtos/form',
           parent: angular.element(document.body),
@@ -87,24 +99,50 @@ angular.module('BlankApp', ['ngMaterial','md.data.table'])
           fullscreen: true,
           scope: $scope.$new()
           
-        })
-        .then(function(save) {
-            console.log(save);  
-            $scope.status = 'You said the information was "' + save + '".';
-          
+        });
+    };
+    
+    $scope.save = function(i){
+      if(!i){
+          $mdDialog.hide();
+      } else {
+        var action = $scope.add.cd_produto ? 'edit/' + $scope.add.cd_produto : 'add';
+        $http({
+              method: 'POST',
+              url: 'produtos/'+ action,
+              data : $scope.add
+            }).then(function(response) {
+              $mdDialog.hide();
+              all();
+            }, function(response) {
+                $mdDialog.hide();
+            });
+        }
+    };
+    
+    $scope.delete = function(ev){
+        var text = $scope.selected.length > 1 ? 'Deseja realmente excluir os produtos?' : 'Deseja realmente excluir o produto?';
+        var confirm = $mdDialog.confirm()
+            .title('Alerta')
+            .textContent(text)
+            .ariaLabel('Alerta de exclusão')
+            .targetEvent(ev)
+            .ok('Sim')
+            .cancel('Não');
+        $mdDialog.show(confirm).then(function() {
+            $http({
+              method: 'POST',
+              url: 'produtos/delete',
+              data : JSON.stringify($scope.selected)
+            }).then(function(response) {
+              all();
+            });
+
         }, function() {
-            $scope.status = 'You cancelled the dialog.';
+
         });
         
     };
-    
-    $scope.save = function(){
-      alert('salvar');
-      console.log($scope.add);
-      $mdDialog.hide();
-      all();
-    };
-    
     
   })
   .controller('MenuCtrl', function ($scope, $timeout, $mdSidenav, $log) {

@@ -15,3 +15,79 @@ Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 62
 
 
 
+2016-07-12 23:24:58 Notice: Strict (2048): Declaration of App\Model\Table\ArticlesTable::validationDefault() should be compatible with Cake\ORM\Table::validationDefault(Cake\Validation\Validator $validator) in [C:\wamp\www\crud-cake-angular\src\Model\Table\ProdutosTable.php, line 7]
+Request URL: /crud-cake-angular/produtos/add
+Referer URL: http://localhost/crud-cake-angular/
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 146
+include - APP/Model\Table\ProdutosTable.php, line 7
+Composer\Autoload\includeFile - ROOT\vendor\composer\ClassLoader.php, line 412
+Composer\Autoload\ClassLoader::loadClass() - ROOT\vendor\composer\ClassLoader.php, line 301
+spl_autoload_call - [internal], line ??
+class_exists - [internal], line ??
+Cake\Core\App::_classExistsInBase() - CORE\src\Core\App.php, line 151
+Cake\Core\App::className() - CORE\src\Core\App.php, line 64
+Cake\ORM\Locator\TableLocator::_getClassName() - CORE\src\ORM\Locator\TableLocator.php, line 196
+Cake\ORM\Locator\TableLocator::get() - CORE\src\ORM\Locator\TableLocator.php, line 154
+Cake\Controller\Controller::loadModel() - CORE\src\Datasource\ModelAwareTrait.php, line 114
+Cake\Controller\Controller::__get() - CORE\src\Controller\Controller.php, line 346
+App\Controller\ProdutosController::add() - APP/Controller\ProdutosController.php, line 25
+Cake\Controller\Controller::invokeAction() - CORE\src\Controller\Controller.php, line 429
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 114
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2016-07-12 23:47:10 Notice: Notice (8): Undefined variable: id in [C:\wamp\www\crud-cake-angular\src\Controller\ProdutosController.php, line 24]
+Request URL: /crud-cake-angular/produtos/delete
+Referer URL: http://localhost/crud-cake-angular/
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 146
+App\Controller\ProdutosController::delete() - APP/Controller\ProdutosController.php, line 24
+Cake\Controller\Controller::invokeAction() - CORE\src\Controller\Controller.php, line 429
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 114
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2016-07-12 23:47:47 Notice: Notice (8): Undefined variable: id in [C:\wamp\www\crud-cake-angular\src\Controller\ProdutosController.php, line 24]
+Request URL: /crud-cake-angular/produtos/delete
+Referer URL: http://localhost/crud-cake-angular/
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 146
+App\Controller\ProdutosController::delete() - APP/Controller\ProdutosController.php, line 24
+Cake\Controller\Controller::invokeAction() - CORE\src\Controller\Controller.php, line 429
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 114
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2016-07-12 23:48:31 Notice: Notice (8): Undefined variable: id in [C:\wamp\www\crud-cake-angular\src\Controller\ProdutosController.php, line 24]
+Request URL: /crud-cake-angular/produtos/delete
+Referer URL: http://localhost/crud-cake-angular/
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 146
+App\Controller\ProdutosController::delete() - APP/Controller\ProdutosController.php, line 24
+Cake\Controller\Controller::invokeAction() - CORE\src\Controller\Controller.php, line 429
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 114
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2016-07-12 23:48:45 Notice: Notice (8): Undefined variable: id in [C:\wamp\www\crud-cake-angular\src\Controller\ProdutosController.php, line 24]
+Request URL: /crud-cake-angular/produtos/delete
+Referer URL: http://localhost/crud-cake-angular/
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 146
+App\Controller\ProdutosController::delete() - APP/Controller\ProdutosController.php, line 24
+Cake\Controller\Controller::invokeAction() - CORE\src\Controller\Controller.php, line 429
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 114
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
