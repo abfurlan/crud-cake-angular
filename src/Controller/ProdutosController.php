@@ -12,20 +12,27 @@ class ProdutosController extends AppController {
         parent::initialize();
         $this->loadComponent('RequestHandler');
     }
+    /*
+     * Seleciona todos os produtos e retorna em formato json
+     */
     public function all(){
         $this->RequestHandler->renderAs($this, 'json');
         $this->response->type('application/json');
         $this->set('_serialize', true);
         $this->set('produtos', $this->Produtos->find('all'));
     }
-    
+    /*
+     * Seleciona um produto pelo seu id
+     */
     public function view($id){
         $this->RequestHandler->renderAs($this, 'json');
         $this->response->type('application/json');
         $this->set('_serialize', true);
         $this->set('produto', $this->Produtos->get($id));
     }
-    
+    /*
+     * Exclui um ou mais produtos
+     */
     public function delete(){
         $this->request->is('post');
         $this->RequestHandler->renderAs($this, 'json');
@@ -40,9 +47,15 @@ class ProdutosController extends AppController {
         }
         
     }
+    /*
+     * Template do formulário de cadastro e edição de produtos
+     */
     public function form(){
         $this->viewBuilder()->layout('ajax');
     }
+    /*
+     * Adiciona um novo produto
+     */
     public function add(){
         $produto = $this->Produtos->newEntity();
         $this->RequestHandler->renderAs($this, 'json');
@@ -58,6 +71,9 @@ class ProdutosController extends AppController {
             }
         }
     }
+    /*
+     * Edita um produto existente
+     */
     public function edit($id = null){
         
         $produto = $this->Produtos->get($id);
