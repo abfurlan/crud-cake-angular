@@ -1,11 +1,11 @@
 <md-content flex layout-padding class="height-100">
     <md-toolbar class="md-table-toolbar md-default">
         <div class="md-toolbar-tools actions">
-            <md-button class="md-raised md-primary" ng-click="showModal()">
+            <md-button class="md-raised md-primary" ng-click="showModal('new')">
                 <md-icon md-svg-icon="img/icons/ic_add_white_24px.svg" ></md-icon>
                 Novo
             </md-button>
-            <md-button class="md-raised" ng-click="showModal()" ng-show="selected.length == 1">
+            <md-button class="md-raised" ng-click="showModal('edit')" ng-show="selected.length == 1">
                 <md-icon md-svg-icon="img/icons/ic_mode_edit_black_24px.svg"></md-icon>
                 Editar
             </md-button>

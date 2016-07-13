@@ -72,12 +72,12 @@ angular.module('BlankApp', ['ngMaterial','md.data.table'])
      * Exibe o modal com o formulário de cadastro e
      * ou edição de produtos
      */
-    $scope.showModal = function(){
+    $scope.showModal = function(e){
         /*
          * Se hover somente um checkbox selecionado, busca o produto
          * no banco de dados e coloca no form para edição
          */
-        if($scope.selected.length == 1){
+        if($scope.selected.length == 1 && e === 'edit'){
            $http({
               method: 'GET',
               url: 'produtos/view/'+$scope.selected[0]
