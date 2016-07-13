@@ -1,11 +1,6 @@
--- phpMyAdmin SQL Dump
--- version 4.1.14
--- http://www.phpmyadmin.net
---
--- Host: 127.0.0.1
--- Generation Time: 12-Jul-2016 às 12:15
--- Versão do servidor: 5.6.17
--- PHP Version: 5.5.12
+CREATE DATABASE `cruddb` CHARACTER SET 'utf8' COLLATE 'utf8_general_ci';
+
+USE `cruddb`;
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET time_zone = "+00:00";
