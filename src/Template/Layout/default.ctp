@@ -15,7 +15,12 @@ $cakeDescription = 'Produtos';
     <?= $this->Html->css('angular-material.min') ?>
     <?= $this->Html->css('md-data-table.min') ?>
     <?= $this->Html->css('style') ?>
-    
+    <?= $this->Html->script('angular.min') ?>
+    <?= $this->Html->script('angular-animate.min') ?>
+    <?= $this->Html->script('angular-aria.min') ?>
+    <?= $this->Html->script('angular-messages.min') ?>
+    <?= $this->Html->script('angular-material.min') ?>
+    <?= $this->Html->script('md-data-table.min') ?>
 
     <?= $this->fetch('meta') ?>
     <?= $this->fetch('css') ?>
@@ -26,7 +31,7 @@ $cakeDescription = 'Produtos';
     <md-content ng-controller="AppCtrl">
         <md-toolbar class="md-theme-light">
             <div class="md-toolbar-tools">
-                <md-button class="md-icon-button" ng-click="toggleRight()" aria-label="Settings">
+                <md-button class="md-icon-button" ng-click="toggleLeft()" aria-label="Settings">
                     <md-icon md-svg-icon="img/icons/ic_view_headline_white_24px.svg"></md-icon>
                 </md-button>
                 <h2>
@@ -54,12 +59,7 @@ $cakeDescription = 'Produtos';
            
         </section>
     </div>
-    <?= $this->Html->script('angular.min') ?>
-    <?= $this->Html->script('angular-animate.min') ?>
-    <?= $this->Html->script('angular-aria.min') ?>
-    <?= $this->Html->script('angular-messages.min') ?>
-    <?= $this->Html->script('angular-material.min') ?>
-    <?= $this->Html->script('md-data-table.min') ?>
+    
     <?= $this->Html->script('app') ?>
     <?= $this->Html->script('controller') ?>
     

@@ -38,7 +38,12 @@
                     <td md-cell>{{produto.nm_saldo | number: 0}}</td>
                     <td md-cell>{{produto.vl_preco | number: 2}}</td>
                     <td md-cell> 
-                        <input type="checkbox" name="status" value="{{produto.cd_produto}}" ng-checked="produto.id_status"  />
+                        <input type="checkbox" name="status" disabled value="{{produto.cd_produto}}" ng-checked="produto.id_status"  />
+                    </td>
+                </tr>
+                <tr md-row>
+                    <td md-cell colspan="6" ng-show="produtos.length === 0">
+                        Nenhum registro encontrado
                     </td>
                 </tr>
             </tbody>

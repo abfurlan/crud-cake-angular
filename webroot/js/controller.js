@@ -1,39 +1,8 @@
 angular.module('BlankApp', ['ngMaterial','md.data.table'])
   .controller('AppCtrl', function ($scope, $timeout, $mdSidenav,$mdDialog, $log,$http,$q) {
-    $scope.toggleLeft = buildDelayedToggler('left');
-    $scope.toggleRight = buildToggler('sidenav-left');
-    $scope.isOpenRight = function(){
-      return $mdSidenav('sidenav-left').isOpen();
-    };
-    /**
-     * Supplies a function that will continue to operate until the
-     * time is up.
-     */
-    function debounce(func, wait, context) {
-      var timer;
-      return function debounced() {
-        var context = $scope,
-            args = Array.prototype.slice.call(arguments);
-        $timeout.cancel(timer);
-        timer = $timeout(function() {
-          timer = undefined;
-          func.apply(context, args);
-        }, wait || 10);
-      };
-    }
-    /**
-     * Build handler to open/close a SideNav; when animation finishes
-     * report completion in console
-     */
-    function buildDelayedToggler(navID) {
-      return debounce(function() {
-        $mdSidenav(navID)
-          .toggle()
-          .then(function () {
-            $log.debug("toggle " + navID + " is done");
-          });
-      }, 200);
-    }
+    //$scope.toggleLeft = buildDelayedToggler('left');
+    $scope.toggleLeft = buildToggler('sidenav-left');
+    
     function buildToggler(navID) {
       return function() {
         $mdSidenav(navID)
@@ -45,6 +14,7 @@ angular.module('BlankApp', ['ngMaterial','md.data.table'])
     };
     var all = function(){
         $scope.selected = {};
+        $scope.isAllSelected = false;
         var deferred = $q.defer();
         $scope.promise = deferred.promise;
         $http({
@@ -81,7 +51,6 @@ angular.module('BlankApp', ['ngMaterial','md.data.table'])
     };
     
     $scope.showModal = function(){
-        console.log($scope.selected);
         if($scope.selected.length == 1){
            $http({
               method: 'GET',
@@ -145,19 +114,9 @@ angular.module('BlankApp', ['ngMaterial','md.data.table'])
     };
     
   })
-  .controller('MenuCtrl', function ($scope, $timeout, $mdSidenav, $log) {
+  .controller('MenuCtrl', function ($scope, $mdSidenav) {
     $scope.close = function () {
-      $mdSidenav('left').close()
-        .then(function () {
-          $log.debug("close LEFT is done");
-        });
+      $mdSidenav('left').close();
     };
   })
-  .controller('RightCtrl', function ($scope, $timeout, $mdSidenav, $log) {
-    $scope.close = function () {
-      $mdSidenav('sidenav-left').close()
-        .then(function () {
-          $log.debug("close RIGHT is done");
-        });
-    };
-  });
+  ;

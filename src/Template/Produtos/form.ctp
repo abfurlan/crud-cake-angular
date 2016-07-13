@@ -47,7 +47,8 @@
             <md-button ng-click="save(false)">
                 CANCELAR
             </md-button>
-            <md-button class="md-raised md-primary" ng-click="save(true)">
+            <md-button class="md-raised md-primary" ng-click="save(true)"
+                       ng-disabled="!add.dc_descricao || !add.nm_saldo || !add.vl_preco">
                 GRAVAR
             </md-button>
         </md-dialog-actions>
