@@ -13,6 +13,9 @@
                 <md-icon md-svg-icon="img/icons/ic_delete_white_24px.svg"></md-icon>
                 Excluir
             </md-button>
+            <md-button class="md-icon-button" ng-click="refresh()">
+                <md-icon md-svg-icon="img/icons/ic_refresh_black_24px.svg"></md-icon>
+            </md-button>
         </div>
     </md-toolbar>
     <md-table-container>

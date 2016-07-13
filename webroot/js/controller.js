@@ -159,6 +159,9 @@ angular.module('BlankApp', ['ngMaterial','md.data.table'])
         
     };
     
+    //Atualiza a tabela
+    $scope.refresh = function(){ all()};
+    
   })
   .controller('MenuCtrl', function ($scope, $mdSidenav) {
     $scope.close = function () {
