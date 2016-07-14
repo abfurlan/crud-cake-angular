@@ -91,3 +91,16 @@ Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
 
 
 
+2016-07-14 20:03:35 Notice: Notice (8): Undefined variable: id in [C:\wamp\www\crud-cake-angular\src\Controller\ProdutosController.php, line 100]
+Request URL: /crud-cake-angular/produtos/status
+Referer URL: http://localhost:81/crud-cake-angular/produtos
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 146
+App\Controller\ProdutosController::status() - APP/Controller\ProdutosController.php, line 100
+Cake\Controller\Controller::invokeAction() - CORE\src\Controller\Controller.php, line 429
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 114
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+

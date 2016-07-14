@@ -1,7 +1,7 @@
 <?php
 namespace App\Controller;
 use App\Controller\AppController;
-
+use Cake\ORM\TableRegistry;
 class ProdutosController extends AppController {
     
     
@@ -89,6 +89,19 @@ class ProdutosController extends AppController {
                 $this->set('result',array('success'=>false,'msg'=>'Erro ao salvar produto'));
             }
         }
+    }
+    public function status($id,$status){
+        $this->RequestHandler->renderAs($this, 'json');
+        $this->response->type('application/json');  
+        $this->set('_serialize', true);
+        $produtosTable = TableRegistry::get('Produtos');
+        $produto = $produtosTable->get($id); // Return article with id 12
 
+        $produto->id_status = $status === 'true' ? false : true;
+        if ($this->Produtos->save($produto)) {
+            $this->set('result',array('success'=>true,'msg'=>'Produto salvo com sucesso!'));
+        } else {
+            $this->set('result',array('success'=>false,'msg'=>'Erro ao salvar produto'));
+        }
     }
 }

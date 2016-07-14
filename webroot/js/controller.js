@@ -130,6 +130,34 @@ angular.module('BlankApp', ['ngMaterial','md.data.table'])
     /*
      * Função para excluir um ou mais produtos
      */
+    $scope.status = function(id,status){
+        /*
+         * Exibe o modal de confirmação
+         */
+        var text = status ? 'desativar' :  'ativar';
+        var confirm = $mdDialog.confirm()
+            .title('Alerta')
+            .textContent('Deseja realmente alterar o '+text+' o produto?')
+            .ariaLabel('Alerta de exclusão')
+            //.targetEvent(ev)
+            .ok('Sim')
+            .cancel('Não');
+        //se confirmou envia para o Controller e exclui
+        $mdDialog.show(confirm).then(function() {
+            $http({
+              method: 'POST',
+              url: 'produtos/status/'+id+'/'+status,
+              data : JSON.stringify($scope.selected)
+            }).then(function(response) {
+              all();
+            });
+
+        }, function() {
+
+        });
+        
+    };
+    
     $scope.delete = function(ev){
         /*
          * Exibe o modal de confirmação
