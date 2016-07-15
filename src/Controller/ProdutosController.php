@@ -15,10 +15,18 @@ class ProdutosController extends AppController {
      * Seleciona todos os produtos e retorna em formato json
      */
     public function all(){
+        $this->request->is('post');
+        //print_r($this->request->data);exit;
         $this->RequestHandler->renderAs($this, 'json');
         $this->response->type('application/json');
         $this->set('_serialize', true);
-        $this->set('produtos', $this->Produtos->find('all'));
+        $count = $this->Produtos->find('all')->count();
+        $produtos = $this->Produtos->find()
+                                   ->limit($this->request->data['limit'])
+                                   ->page($this->request->data['page'])
+                                   ->order($this->request->data['order']);
+        $this->set('count', $count);
+        $this->set('produtos', $produtos);
     }
     /*
      * Seleciona um produto pelo seu id

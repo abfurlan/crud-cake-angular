@@ -14,6 +14,32 @@ angular.module('BlankApp', ['ngMaterial','md.data.table'])
           });
       };
     };
+    //opções quantidade de linhas por página
+    $scope.limitOptions = [1, 5, 10, 15, 20, 25, 50, 100];
+    //Opções de paginação
+    $scope.options = {
+        limitSelect: true,
+        pageSelect: true
+    };
+    //Parametros para consulta
+    $scope.query = {
+        order: 'dc_descricao',
+        ord : 'asc',
+        limit: 5,
+        page: 1
+    };
+    //Função chamada ao ordenar registro 
+    $scope.logOrder = function (order) {
+        $scope.query.order = order;
+        all();
+    };
+    //Função chamada ao paginar
+    $scope.logPagination = function (page, limit) {
+        $scope.query.limit = limit;
+        $scope.query.page = page;
+        all();
+    };
+    
     /*
      * Função para controlar barra de progresso
      * progress(true); exibe a barra de progresso
@@ -40,12 +66,13 @@ angular.module('BlankApp', ['ngMaterial','md.data.table'])
          * Requisição ajax para selecionar todos os produtos
          */
         $http({
-            method: 'GET',
-            url: 'produtos/all'
+            method: 'POST',
+            url: 'produtos/all',
+            data : $scope.query
         }).then(function(response) {
-            //deferred.resolve();
             progress(false);
             $scope.produtos = response.data.produtos;
+            $scope.produtos.count = response.data.count;
         }, function(response) {
 
         });

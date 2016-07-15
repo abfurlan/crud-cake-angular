@@ -104,3 +104,172 @@ Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
 
 
 
+2016-07-15 18:51:26 Notice: Notice (8): Undefined index: limit in [C:\wamp\www\crud-cake-angular\src\Controller\ProdutosController.php, line 21]
+Request URL: /crud-cake-angular/produtos/all
+Referer URL: http://localhost:81/crud-cake-angular/
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 146
+App\Controller\ProdutosController::all() - APP/Controller\ProdutosController.php, line 21
+Cake\Controller\Controller::invokeAction() - CORE\src\Controller\Controller.php, line 429
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 114
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2016-07-15 18:51:26 Notice: Notice (8): Undefined index: limit in [C:\wamp\www\crud-cake-angular\src\Controller\ProdutosController.php, line 21]
+Request URL: /crud-cake-angular/produtos/all
+Referer URL: http://localhost:81/crud-cake-angular/
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 146
+App\Controller\ProdutosController::all() - APP/Controller\ProdutosController.php, line 21
+Cake\Controller\Controller::invokeAction() - CORE\src\Controller\Controller.php, line 429
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 114
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2016-07-15 18:51:34 Notice: Notice (8): Undefined index: limit in [C:\wamp\www\crud-cake-angular\src\Controller\ProdutosController.php, line 21]
+Request URL: /crud-cake-angular/produtos/all
+Referer URL: http://localhost:81/crud-cake-angular/
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 146
+App\Controller\ProdutosController::all() - APP/Controller\ProdutosController.php, line 21
+Cake\Controller\Controller::invokeAction() - CORE\src\Controller\Controller.php, line 429
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 114
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2016-07-15 18:52:04 Notice: Notice (8): Undefined index: limit in [C:\wamp\www\crud-cake-angular\src\Controller\ProdutosController.php, line 21]
+Request URL: /crud-cake-angular/produtos/all
+Referer URL: http://localhost:81/crud-cake-angular/
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 146
+App\Controller\ProdutosController::all() - APP/Controller\ProdutosController.php, line 21
+Cake\Controller\Controller::invokeAction() - CORE\src\Controller\Controller.php, line 429
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 114
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2016-07-15 18:52:04 Notice: Notice (8): Undefined index: limit in [C:\wamp\www\crud-cake-angular\src\Controller\ProdutosController.php, line 21]
+Request URL: /crud-cake-angular/produtos/all
+Referer URL: http://localhost:81/crud-cake-angular/
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 146
+App\Controller\ProdutosController::all() - APP/Controller\ProdutosController.php, line 21
+Cake\Controller\Controller::invokeAction() - CORE\src\Controller\Controller.php, line 429
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 114
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2016-07-15 18:52:20 Notice: Notice (8): Trying to get property of non-object in [C:\wamp\www\crud-cake-angular\src\Controller\ProdutosController.php, line 21]
+Request URL: /crud-cake-angular/produtos/all
+Referer URL: http://localhost:81/crud-cake-angular/
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 146
+App\Controller\ProdutosController::all() - APP/Controller\ProdutosController.php, line 21
+Cake\Controller\Controller::invokeAction() - CORE\src\Controller\Controller.php, line 429
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 114
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2016-07-15 18:52:20 Notice: Notice (8): Trying to get property of non-object in [C:\wamp\www\crud-cake-angular\src\Controller\ProdutosController.php, line 21]
+Request URL: /crud-cake-angular/produtos/all
+Referer URL: http://localhost:81/crud-cake-angular/
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 146
+App\Controller\ProdutosController::all() - APP/Controller\ProdutosController.php, line 21
+Cake\Controller\Controller::invokeAction() - CORE\src\Controller\Controller.php, line 429
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 114
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2016-07-15 18:54:56 Notice: Notice (8): Undefined index: limit in [C:\wamp\www\crud-cake-angular\src\Controller\ProdutosController.php, line 21]
+Request URL: /crud-cake-angular/produtos/all
+Referer URL: http://localhost:81/crud-cake-angular/
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 146
+App\Controller\ProdutosController::all() - APP/Controller\ProdutosController.php, line 21
+Cake\Controller\Controller::invokeAction() - CORE\src\Controller\Controller.php, line 429
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 114
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2016-07-15 18:54:56 Notice: Notice (8): Undefined index: limit in [C:\wamp\www\crud-cake-angular\src\Controller\ProdutosController.php, line 21]
+Request URL: /crud-cake-angular/produtos/all
+Referer URL: http://localhost:81/crud-cake-angular/
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 146
+App\Controller\ProdutosController::all() - APP/Controller\ProdutosController.php, line 21
+Cake\Controller\Controller::invokeAction() - CORE\src\Controller\Controller.php, line 429
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 114
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2016-07-15 19:00:45 Notice: Notice (8): Undefined index: limit in [C:\wamp\www\crud-cake-angular\src\Controller\ProdutosController.php, line 23]
+Request URL: /crud-cake-angular/produtos/all
+Referer URL: http://localhost:81/crud-cake-angular/
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 146
+App\Controller\ProdutosController::all() - APP/Controller\ProdutosController.php, line 23
+Cake\Controller\Controller::invokeAction() - CORE\src\Controller\Controller.php, line 429
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 114
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2016-07-15 19:00:45 Notice: Notice (8): Undefined index: limit in [C:\wamp\www\crud-cake-angular\src\Controller\ProdutosController.php, line 23]
+Request URL: /crud-cake-angular/produtos/all
+Referer URL: http://localhost:81/crud-cake-angular/
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 146
+App\Controller\ProdutosController::all() - APP/Controller\ProdutosController.php, line 23
+Cake\Controller\Controller::invokeAction() - CORE\src\Controller\Controller.php, line 429
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 114
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2016-07-15 19:01:13 Notice: Notice (8): Undefined index: limit in [C:\wamp\www\crud-cake-angular\src\Controller\ProdutosController.php, line 23]
+Request URL: /crud-cake-angular/produtos/all
+Referer URL: http://localhost:81/crud-cake-angular/
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 146
+App\Controller\ProdutosController::all() - APP/Controller\ProdutosController.php, line 23
+Cake\Controller\Controller::invokeAction() - CORE\src\Controller\Controller.php, line 429
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 114
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2016-07-15 19:01:13 Notice: Notice (8): Undefined index: limit in [C:\wamp\www\crud-cake-angular\src\Controller\ProdutosController.php, line 23]
+Request URL: /crud-cake-angular/produtos/all
+Referer URL: http://localhost:81/crud-cake-angular/
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 146
+App\Controller\ProdutosController::all() - APP/Controller\ProdutosController.php, line 23
+Cake\Controller\Controller::invokeAction() - CORE\src\Controller\Controller.php, line 429
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 114
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+

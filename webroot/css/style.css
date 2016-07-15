@@ -6,9 +6,6 @@
     color:#fff !important;
 }
 .actions .md-icon-button{
-    position: absolute; 
-    right: 20px; 
-    top:20px;
     opacity: .5;
 }
 input[type="checkbox"]{
