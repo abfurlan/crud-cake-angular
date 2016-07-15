@@ -10,7 +10,7 @@
                 <span hide-xs>Editar</span>
             </md-button>
             <md-button class="md-raised md-warn" ng-click="delete()" ng-show="selected.length > 0">
-                <md-icon hide-xs md-svg-icon="img/icons/ic_delete_white_24px.svg"></md-icon>
+                <md-icon md-svg-icon="img/icons/ic_delete_white_24px.svg"></md-icon>
                 <span hide-xs>Excluir</span>
             </md-button>
             <div flex></div>
