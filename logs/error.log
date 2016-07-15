@@ -12740,3 +12740,203 @@ Stack Trace:
 #1 {main}
 
 
+2016-07-15 20:17:09 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Img could not be found.
+Request URL: /crud-cake-angular/img/icons/ic_photo_24px.svg
+Referer URL: http://localhost:81/crud-cake-angular/
+Stack Trace:
+#0 C:\wamp\www\crud-cake-angular\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-07-15 20:17:09 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Img could not be found.
+Request URL: /crud-cake-angular/img/icons/menu.svg
+Referer URL: http://localhost:81/crud-cake-angular/
+Stack Trace:
+#0 C:\wamp\www\crud-cake-angular\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-07-15 20:17:09 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Img could not be found.
+Request URL: /crud-cake-angular/img/icons/ic_comment_24px.svg
+Referer URL: http://localhost:81/crud-cake-angular/
+Stack Trace:
+#0 C:\wamp\www\crud-cake-angular\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-07-15 20:17:09 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Img could not be found.
+Request URL: /crud-cake-angular/img/icons/ic_label_24px.svg
+Referer URL: http://localhost:81/crud-cake-angular/
+Stack Trace:
+#0 C:\wamp\www\crud-cake-angular\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-07-15 20:17:32 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Img could not be found.
+Request URL: /crud-cake-angular/img/icons/ic_label_24px.svg
+Referer URL: http://localhost:81/crud-cake-angular/
+Stack Trace:
+#0 C:\wamp\www\crud-cake-angular\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-07-15 20:17:32 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Img could not be found.
+Request URL: /crud-cake-angular/img/icons/ic_photo_24px.svg
+Referer URL: http://localhost:81/crud-cake-angular/
+Stack Trace:
+#0 C:\wamp\www\crud-cake-angular\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-07-15 20:17:32 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Img could not be found.
+Request URL: /crud-cake-angular/img/icons/menu.svg
+Referer URL: http://localhost:81/crud-cake-angular/
+Stack Trace:
+#0 C:\wamp\www\crud-cake-angular\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-07-15 20:17:32 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Img could not be found.
+Request URL: /crud-cake-angular/img/icons/ic_comment_24px.svg
+Referer URL: http://localhost:81/crud-cake-angular/
+Stack Trace:
+#0 C:\wamp\www\crud-cake-angular\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-07-15 20:17:53 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Js could not be found.
+Request URL: /crud-cake-angular/js/angular.min.js.map
+Stack Trace:
+#0 C:\wamp\www\crud-cake-angular\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-07-15 20:17:53 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Js could not be found.
+Request URL: /crud-cake-angular/js/angular-animate.min.js.map
+Stack Trace:
+#0 C:\wamp\www\crud-cake-angular\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-07-15 20:17:53 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Js could not be found.
+Request URL: /crud-cake-angular/js/angular-aria.min.js.map
+Stack Trace:
+#0 C:\wamp\www\crud-cake-angular\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-07-15 20:17:53 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Js could not be found.
+Request URL: /crud-cake-angular/js/angular-messages.min.js.map
+Stack Trace:
+#0 C:\wamp\www\crud-cake-angular\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-07-15 20:18:03 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Js could not be found.
+Request URL: /crud-cake-angular/js/angular-messages.min.js.map
+Stack Trace:
+#0 C:\wamp\www\crud-cake-angular\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-07-15 20:18:03 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Js could not be found.
+Request URL: /crud-cake-angular/js/angular.min.js.map
+Stack Trace:
+#0 C:\wamp\www\crud-cake-angular\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-07-15 20:18:03 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Js could not be found.
+Request URL: /crud-cake-angular/js/angular-aria.min.js.map
+Stack Trace:
+#0 C:\wamp\www\crud-cake-angular\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-07-15 20:18:03 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Js could not be found.
+Request URL: /crud-cake-angular/js/angular-animate.min.js.map
+Stack Trace:
+#0 C:\wamp\www\crud-cake-angular\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-07-15 20:18:04 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Img could not be found.
+Request URL: /crud-cake-angular/img/icons/ic_photo_24px.svg
+Referer URL: http://localhost:81/crud-cake-angular/
+Stack Trace:
+#0 C:\wamp\www\crud-cake-angular\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-07-15 20:18:04 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Img could not be found.
+Request URL: /crud-cake-angular/img/icons/ic_label_24px.svg
+Referer URL: http://localhost:81/crud-cake-angular/
+Stack Trace:
+#0 C:\wamp\www\crud-cake-angular\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-07-15 20:18:04 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Img could not be found.
+Request URL: /crud-cake-angular/img/icons/ic_comment_24px.svg
+Referer URL: http://localhost:81/crud-cake-angular/
+Stack Trace:
+#0 C:\wamp\www\crud-cake-angular\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-07-15 20:19:43 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Js could not be found.
+Request URL: /crud-cake-angular/js/angular.min.js.map
+Stack Trace:
+#0 C:\wamp\www\crud-cake-angular\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-07-15 20:19:43 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Js could not be found.
+Request URL: /crud-cake-angular/js/angular-animate.min.js.map
+Stack Trace:
+#0 C:\wamp\www\crud-cake-angular\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-07-15 20:19:43 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Js could not be found.
+Request URL: /crud-cake-angular/js/angular-messages.min.js.map
+Stack Trace:
+#0 C:\wamp\www\crud-cake-angular\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-07-15 20:19:43 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Js could not be found.
+Request URL: /crud-cake-angular/js/angular-aria.min.js.map
+Stack Trace:
+#0 C:\wamp\www\crud-cake-angular\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-07-15 20:20:07 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Js could not be found.
+Request URL: /crud-cake-angular/js/angular-animate.min.js.map
+Stack Trace:
+#0 C:\wamp\www\crud-cake-angular\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-07-15 20:20:07 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Js could not be found.
+Request URL: /crud-cake-angular/js/angular-aria.min.js.map
+Stack Trace:
+#0 C:\wamp\www\crud-cake-angular\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-07-15 20:20:07 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Js could not be found.
+Request URL: /crud-cake-angular/js/angular.min.js.map
+Stack Trace:
+#0 C:\wamp\www\crud-cake-angular\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-07-15 20:20:07 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Js could not be found.
+Request URL: /crud-cake-angular/js/angular-messages.min.js.map
+Stack Trace:
+#0 C:\wamp\www\crud-cake-angular\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
