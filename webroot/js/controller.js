@@ -1,5 +1,6 @@
 angular.module('BlankApp', ['ngMaterial','md.data.table'])
   .controller('AppCtrl', function ($scope, $timeout, $mdSidenav,$mdDialog, $log,$http,$q) {
+    var deferred;
     /*
      * Para controlar o menu lateral
      */
@@ -14,17 +15,27 @@ angular.module('BlankApp', ['ngMaterial','md.data.table'])
       };
     };
     /*
+     * Função para controlar barra de progresso
+     * progress(true); exibe a barra de progresso
+     * progress(false); oculta
+     */
+    var progress = function(e){
+        if(e){
+            deferred = $q.defer();
+            $scope.promise = deferred.promise;
+        } else {
+            deferred.resolve();
+        }
+        
+    };
+    /*
      * Função para selecionar todos os produtos por ajax
      * e passa o objeto para view
      */
     var all = function(){
         $scope.selected = {}; // nenhum produto selecionado
         $scope.isAllSelected = false; // check master não seleciona
-        /*
-         * promise da barra de progresso da table
-         */
-        var deferred = $q.defer();
-        $scope.promise = deferred.promise;
+        progress(true);
         /*
          * Requisição ajax para selecionar todos os produtos
          */
@@ -32,7 +43,8 @@ angular.module('BlankApp', ['ngMaterial','md.data.table'])
             method: 'GET',
             url: 'produtos/all'
         }).then(function(response) {
-            deferred.resolve();
+            //deferred.resolve();
+            progress(false);
             $scope.produtos = response.data.produtos;
         }, function(response) {
 
@@ -73,6 +85,7 @@ angular.module('BlankApp', ['ngMaterial','md.data.table'])
      * ou edição de produtos
      */
     $scope.showModal = function(e){
+        progress(true);
         /*
          * Se hover somente um checkbox selecionado, busca o produto
          * no banco de dados e coloca no form para edição
@@ -84,7 +97,6 @@ angular.module('BlankApp', ['ngMaterial','md.data.table'])
             }).then(function(response) {
                 $scope.add = response.data.produto;  
             });
-            
         }
         $scope.add = {'id_status':true};
         /*
@@ -95,8 +107,14 @@ angular.module('BlankApp', ['ngMaterial','md.data.table'])
           parent: angular.element(document.body),
           clickOutsideToClose:true,
           fullscreen: true,
-          scope: $scope.$new()
+          scope: $scope.$new(),
+          onShowing : function(){
+            progress(false);
+          }
+        }).then(function(){
+            progress(false);
         });
+        
     };
     /*
      * Função para salvar o produto
@@ -105,6 +123,7 @@ angular.module('BlankApp', ['ngMaterial','md.data.table'])
       if(!i){ // Se clicar no botão cancelar do modal somente o oculta
           $mdDialog.hide();
       } else {
+        
         /*
          * Monta a url de acordo com a ação, se clicou no botão editar haverá 
          * um produto selecionado portanto a url da requisição será
@@ -115,14 +134,17 @@ angular.module('BlankApp', ['ngMaterial','md.data.table'])
         /*
          * Envia os dados por ajax
          */
+        progress(true);
         $http({
               method: 'POST',
               url: 'produtos/'+ action,
               data : $scope.add
             }).then(function(response) {
               $mdDialog.hide();//oculta o modal
+              progress(false);
               all();//recarrega os produtos na table
             }, function(response) {
+                progress(false);
                 $mdDialog.hide();
             });
         }
@@ -131,6 +153,7 @@ angular.module('BlankApp', ['ngMaterial','md.data.table'])
      * Função para excluir um ou mais produtos
      */
     $scope.status = function(id,status){
+        
         /*
          * Exibe o modal de confirmação
          */
@@ -144,16 +167,17 @@ angular.module('BlankApp', ['ngMaterial','md.data.table'])
             .cancel('Não');
         //se confirmou envia para o Controller e exclui
         $mdDialog.show(confirm).then(function() {
+            progress(true);
             $http({
               method: 'POST',
               url: 'produtos/status/'+id+'/'+status,
               data : JSON.stringify($scope.selected)
             }).then(function(response) {
-              all();
+                progress(false);
+                all();
+            },function(error){
+                progress(false);
             });
-
-        }, function() {
-
         });
         
     };
@@ -173,22 +197,23 @@ angular.module('BlankApp', ['ngMaterial','md.data.table'])
     
         //se confirmou envia para o Controller e exclui
         $mdDialog.show(confirm).then(function() {
+            progress(true);
             $http({
               method: 'POST',
               url: 'produtos/delete',
               data : JSON.stringify($scope.selected)
             }).then(function(response) {
-              all();
+                progress(false);
+                all();
+            },function(error){
+                progress(false);
             });
-
-        }, function() {
-
         });
         
     };
     
     //Atualiza a tabela
-    $scope.refresh = function(){ all()};
+    $scope.refresh = function(){ all();};
     
   })
   .controller('MenuCtrl', function ($scope, $mdSidenav) {

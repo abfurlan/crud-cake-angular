@@ -4,7 +4,6 @@ use App\Controller\AppController;
 use Cake\ORM\TableRegistry;
 class ProdutosController extends AppController {
     
-    
     public function index(){
         $this->set('produtos', $this->Produtos->find('all'));
     }
@@ -75,7 +74,6 @@ class ProdutosController extends AppController {
      * Edita um produto existente
      */
     public function edit($id = null){
-        
         $produto = $this->Produtos->get($id);
         $this->RequestHandler->renderAs($this, 'json');
         $this->response->type('application/json');  
