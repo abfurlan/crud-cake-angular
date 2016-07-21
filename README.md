@@ -1,4 +1,10 @@
-# CakePHP Application Skeleton
+#CRUD Angular Material Design e CakePHP 3
+
+## Requisitos
+1. HTTP Server. Por exemplo: Apache. De preferência com mod_rewrite ativo, mas não é obrigatório.
+2. PHP 5.5.9 ou superior.
+3. extensão mbstring
+4. extensão intl
 
 [![Build Status](https://img.shields.io/travis/cakephp/app/master.svg?style=flat-square)](https://travis-ci.org/cakephp/app)
 [![License](https://img.shields.io/packagist/l/cakephp/app.svg?style=flat-square)](https://packagist.org/packages/cakephp/app)
@@ -7,20 +13,11 @@ A skeleton for creating applications with [CakePHP](http://cakephp.org) 3.x.
 
 The framework source code can be found here: [cakephp/cakephp](https://github.com/cakephp/cakephp).
 
-## Installation
+## Instalação
 
-1. Download [Composer](http://getcomposer.org/doc/00-intro.md) or update `composer self-update`.
-2. Run `php composer.phar create-project --prefer-dist cakephp/app [app_name]`.
+1. Clone o repositório
+2. Execute o arquivo localizado no diretório Banco de dados para criar o banco.
+3. Configure os dados de acesso ao banco `config/app.php`
 
-If Composer is installed globally, run
-```bash
-composer create-project --prefer-dist cakephp/app [app_name]
-```
+[Exemplo](http://45.55.217.30/)
 
-You should now be able to visit the path to where you installed the app and see
-the setup traffic lights.
-
-## Configuration
-
-Read and edit `config/app.php` and setup the 'Datasources' and any other
-configuration relevant for your application.
