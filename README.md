@@ -19,5 +19,5 @@ The framework source code can be found here: [cakephp/cakephp](https://github.co
 2. Execute o arquivo localizado no diretório Banco de dados para criar o banco.
 3. Configure os dados de acesso ao banco `config/app.php`
 
-[Exemplo](http://45.55.217.30/)
+[PÁGINA DE EXEMPLO](http://45.55.217.30/)
 
