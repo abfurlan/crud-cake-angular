@@ -1,4 +1,4 @@
-#CRUD Angular Material Design e CakePHP 3
+#CRUD Angular Material Design, CakePHP 3 e MySQL
 
 ## Requisitos
 1. HTTP Server. Por exemplo: Apache. De preferência com mod_rewrite ativo, mas não é obrigatório.
