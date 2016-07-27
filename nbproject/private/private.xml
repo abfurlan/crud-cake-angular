@@ -4,9 +4,8 @@
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
             <file>file:/C:/wamp/www/crud-cake-angular/webroot/js/controller.js</file>
-            <file>file:/C:/wamp/www/crud-cake-angular/src/Controller/ProdutosController.php</file>
-            <file>file:/C:/wamp/www/crud-cake-angular/config/app.php</file>
             <file>file:/C:/wamp/www/crud-cake-angular/src/Template/Produtos/index.ctp</file>
+            <file>file:/C:/wamp/www/crud-cake-angular/src/Template/Produtos/form.ctp</file>
         </group>
     </open-files>
 </project-private>

@@ -1,6 +1,7 @@
-angular.module('BlankApp', ['ngMaterial','md.data.table'])
+angular.module('BlankApp', ['ngMaterial','ngMessages','md.data.table'])
   .controller('AppCtrl', function ($scope, $timeout, $mdSidenav,$mdDialog, $log,$http,$q) {
     var deferred;
+    $scope.selected = [];
     /*
      * Para controlar o menu lateral
      */
@@ -59,7 +60,7 @@ angular.module('BlankApp', ['ngMaterial','md.data.table'])
      * e passa o objeto para view
      */
     var all = function(){
-        $scope.selected = {}; // nenhum produto selecionado
+        $scope.selected = []; // nenhum produto selecionado
         $scope.isAllSelected = false; // check master não seleciona
         progress(true);
         /*
@@ -81,33 +82,6 @@ angular.module('BlankApp', ['ngMaterial','md.data.table'])
     all(); // chama a função para selecionar os produtos
     
     /*
-     * Função para armazenar os checkbox selecionados
-     */
-    var qtSel = function(){
-      $scope.selected = [];
-      for(var i in $scope.produtos){
-          if($scope.produtos[i].selected){
-              $scope.selected.push($scope.produtos[i].cd_produto) ;
-          }
-      }
-    };
-    
-    //Função para controlar o checkbox master da table
-    $scope.toggleAll = function() {
-        var toggleStatus = $scope.isAllSelected;
-        angular.forEach($scope.produtos, function(itm){ itm.selected = toggleStatus; });
-        qtSel();
-    };
-    //Função para controlar os checkbox de cada produto
-    $scope.optionToggled = function(){
-        $scope.isAllSelected = $scope.produtos.every(function(itm){
-            return itm.selected; 
-        });
-        qtSel();
-    };
-    
-    
-    /*
      * Exibe o modal com o formulário de cadastro e
      * ou edição de produtos
      */
@@ -120,12 +94,12 @@ angular.module('BlankApp', ['ngMaterial','md.data.table'])
         if($scope.selected.length == 1 && e === 'edit'){
            $http({
               method: 'GET',
-              url: 'produtos/view/'+$scope.selected[0]
+              url: 'produtos/view/'+$scope.selected[0].cd_produto
             }).then(function(response) {
                 $scope.add = response.data.produto;  
             });
         }
-        $scope.add = {'id_status':true};
+        $scope.add = {'dc_descricao':'','vl_preco':'','id_status':true};
         /*
          * Exibe o modal buscando o template no Controller produtos/form
          */
@@ -187,8 +161,8 @@ angular.module('BlankApp', ['ngMaterial','md.data.table'])
         var text = status ? 'desativar' :  'ativar';
         var confirm = $mdDialog.confirm()
             .title('Alerta')
-            .textContent('Deseja realmente alterar o '+text+' o produto?')
-            .ariaLabel('Alerta de exclusão')
+            .textContent('Deseja realmente '+text+' o produto?')
+            .ariaLabel('Alerta de Status')
             //.targetEvent(ev)
             .ok('Sim')
             .cancel('Não');
@@ -213,6 +187,7 @@ angular.module('BlankApp', ['ngMaterial','md.data.table'])
         /*
          * Exibe o modal de confirmação
          */
+        console.log(JSON.stringify($scope.selected));
         var text = $scope.selected.length > 1 ? 'Deseja realmente excluir os produtos?' : 'Deseja realmente excluir o produto?';
         var confirm = $mdDialog.confirm()
             .title('Alerta')

@@ -43,9 +43,9 @@ class ProdutosController extends AppController {
     public function delete(){
         $this->request->is('post');
         $this->RequestHandler->renderAs($this, 'json');
-        $this->response->type('application/json');  
-        foreach ($this->request->data as $id){
-            $produto = $this->Produtos->get($id);
+        $this->response->type('application/json');
+        foreach ($this->request->data as $prod){
+            $produto = $this->Produtos->get($prod['cd_produto']);
             if($this->Produtos->delete($produto)){
                 $this->set('result',array('success'=>true,'msg'=>'Produto excluído com sucesso!'));
             } else {
