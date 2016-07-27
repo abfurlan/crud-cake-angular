@@ -22,19 +22,7 @@
                     </md-input-container>
                 </div>
                 
-                <!--<div class="form-input-group">
-                    <label for="cod">Código</label>
-                    <span class="f-right">Ativo?</span>
-                    <div class="inline-group">
-                        <input type="text" disabled class="form-input w-20" id="cod" name="cod" placeholder="Cod" ng-model="add.cd_produto" />
-                        
-                        <md-switch class="md-primary f-right" md-no-ink aria-label="Ativo" ng-model="add.id_status">
-                            
-                        </md-switch>
-
-                    </div>
-
-                </div>-->
+                
                 <div layout-gt-lg="row">
                     <md-input-container class="md-block">
                         <label>Descrição</label>
